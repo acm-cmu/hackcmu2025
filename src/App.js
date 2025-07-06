@@ -48,19 +48,110 @@ function App() {
           </button>
         </div>
         <div className="schedule-items">
-          {selectedDay === 'friday' && (
-            <>
-              <div className="item main"><span>5:30 - 6:00 PM</span> Check-in @ Tepper Simmons</div>
-              <div className="item main"><span>6:00 - 6:30 PM</span> Opening Ceremony</div>
-              <div className="item food"><span>7:00 - 9:00 PM</span> Dinner & Sponsor Fair</div>
-            </>
-          )}
-          {selectedDay === 'saturday' && (
-            <>
-              <div className="item food"><span>12:00 - 1:00 AM</span> Midnight Snack + Scavenger Hunt</div>
-            </>
-          )}
+  {selectedDay === 'friday' && (
+    <>
+      <div className="schedule-row">
+        <div className="time">5:30 - 6:00 PM</div>
+        <div className="divider"></div>
+        <div className="event">
+          <div className="title">Check-in</div>
+          <div className="location">Tepper Simmons Auditorium</div>
+          <div className="desc">Check in with organizers and find team members</div>
         </div>
+      </div>
+      <div className="schedule-row">
+        <div className="time">6:00 - 6:30 PM</div>
+        <div className="divider"></div>
+        <div className="event">
+          <div className="title">Opening Ceremony</div>
+          <div className="location">Tepper Simmons Auditorium</div>
+          <div className="desc">Join us for the opening ceremony of HackCMU 2025!</div>
+        </div>
+      </div>
+      <div className="schedule-row food">
+        <div className="time">7:00 - 9:00 PM</div>
+        <div className="divider"></div>
+        <div className="event">
+          <div className="title">Dinner & Sponsor Fair</div>
+          <div className="location">Tepper Simmons Auditorium</div>
+          <div className="desc">Meet our amazing event sponsors!</div>
+        </div>
+      </div>
+      <div className="schedule-row food">
+        <div className="time">12:00 - 1:00 AM</div>
+        <div className="divider"></div>
+        <div className="event">
+          <div className="title">Midnight Snack</div>
+          <div className="location">Gates La Prima (Gates 3rd floor)</div>
+          <div className="desc">Fuel up with some late-night snacks!</div>
+        </div>
+      </div>
+    </>
+  )}
+  {selectedDay === 'saturday' && (
+  <>
+    <div className="schedule-row food">
+      <div className="time">9:00 - 10:00 AM</div>
+      <div className="divider"></div>
+      <div className="event">
+        <div className="title">Breakfast</div>
+        <div className="location">Across Rashid in the Glass Room</div>
+        <div className="desc">Get breakfast after a long night of hacking!</div>
+      </div>
+    </div>
+    <div className="schedule-row food">
+      <div className="time">12:00 - 1:00 PM</div>
+      <div className="divider"></div>
+      <div className="event">
+        <div className="title">Lunch</div>
+        <div className="location">Across Rashid in the Glass Room</div>
+        <div className="desc">Grab a bite before submitting your final project.</div>
+      </div>
+    </div>
+    <div className="schedule-row">
+      <div className="time">1:00 PM</div>
+      <div className="divider"></div>
+      <div className="event">
+        <div className="title">Project Submission Deadline</div>
+        <div className="location">Submit via Google Forms (required)</div>
+        <div className="desc">
+          Make sure to submit your project description and track selection by 1:00 PM. 
+          You can also share your project on Devpost (optional).
+        </div>
+      </div>
+    </div>
+    <div className="schedule-row">
+      <div className="time">2:00 - 3:30 PM</div>
+      <div className="divider"></div>
+      <div className="event">
+        <div className="title">Judging</div>
+        <div className="location">Rangos Ballroom (CUC 2nd floor)</div>
+        <div className="desc">Judges will evaluate your projects — good luck!</div>
+      </div>
+    </div>
+    <div className="schedule-row">
+      <div className="time">3:30 - 4:30 PM</div>
+      <div className="divider"></div>
+      <div className="event">
+        <div className="title">Expo</div>
+        <div className="location">Rangos Ballroom (CUC 2nd floor)</div>
+        <div className="desc">Show off your project to fellow hackers and attendees.</div>
+      </div>
+    </div>
+    <div className="schedule-row">
+      <div className="time">5:00 - 6:00 PM</div>
+      <div className="divider"></div>
+      <div className="event">
+        <div className="title">Closing Ceremony</div>
+        <div className="location">Rangos Ballroom (CUC 2nd floor)</div>
+        <div className="desc">We hope you continue to reach for the stars after our event!</div>
+      </div>
+    </div>
+  </>
+)}
+
+</div>
+
       </section>
 
       <section className="faq">
