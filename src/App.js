@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="pixel-app">
       <div className="logo-container">
-        <img src="/assets/designs/gates.png" alt="Start Game" className="logo" />
+        <img src={`${process.env.PUBLIC_URL}/assets/designs/gates.png`} alt="Gates" className="logo" />
       </div>
 
       <header className="hero">
