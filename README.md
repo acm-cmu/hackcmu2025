@@ -1,3 +1,11 @@
+# How to commit and deploy
+
+Check out the website here: https://www.acmatcmu.com/hackcmu2025/              
+`git add .`            
+`git commit -m "commit message"`               
+`git push origin main`           
+`npm run deploy`               
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
