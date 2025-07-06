@@ -1,38 +1,280 @@
-.App {
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
-.App-logo {
-  height: 40vmin;
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: 
+    radial-gradient(circle, rgba(255,255,255,0.15) 1px, transparent 1px);
+
+  background-size: 20px 20px, 40px 40px;
+  animation: moveStars 20s linear infinite;
+  z-index: 0;
   pointer-events: none;
+  image-rendering: pixelated;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+
+@keyframes moveStars {
+  from { background-position: 0 0, 0 0; }
+  to { background-position: 200px 200px, 400px 400px; }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* Make sure main content is above */
+.pixel-app {
+  position: relative;
+  z-index: 1;
 }
 
-.App-link {
-  color: #61dafb;
+
+body {
+  margin: 0;
+  background: #2e1a47;
+  color: #faf1d8;
+  font-family: 'Press Start 2P', cursive;
+  text-align: center;
+  image-rendering: pixelated;
+  padding: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.pixel-app {
+  max-width: 800px;
+  margin: 0 auto;
 }
+
+.hero h1 {
+  font-size: 2.5rem;
+  color: #faf1d8;
+  text-shadow: 4px 4px #000;
+  margin: 1rem 0;
+}
+
+.hero .date {
+  font-size: 1rem;
+  color: #ffdc00;
+  text-shadow: 2px 2px #000;
+}
+
+.hero .start-button {
+  font-family: 'Press Start 2P', cursive;
+  background: #faf1d8;
+  color: #ff4136;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1rem;
+  margin: 1.5rem 0;
+  box-shadow: 4px 4px #000;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.hero .start-button:hover {
+  box-shadow: 2px 2px #000;
+  transform: translate(2px, 2px);
+}
+
+.hero .subtext {
+  font-size: 0.8rem;
+  color: #faf1d8;
+}
+
+.about {
+  margin-top: 3rem;
+}
+
+.terminal-box {
+  background: #2e1a47;
+  border: 2px solid #39cccc;
+  color: #faf1d8;
+  padding: 1.5rem;
+  max-width: 600px;
+  margin: 0 auto;
+  box-shadow: 4px 4px #000;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 0.75rem;
+  position: relative;
+  image-rendering: pixelated;
+}
+
+.terminal-header {
+  position: absolute;
+  top: -1.2rem;
+  left: 1rem;
+  background: #2e1a47;
+  padding: 0 0.5rem;
+  color: #39cccc;
+  font-size: 0.6rem;
+}
+
+.terminal-body p {
+
+  margin: 1rem 0;
+  line-height: 1.8;
+}
+
+
+
+.schedule h2, .faq h2, .sponsors h2 {
+  font-size: 1.2rem;
+  margin: 2rem 0 1rem;
+  color: #39cccc;
+}
+
+.day-tabs button {
+  background: transparent;
+  border: 2px solid #39cccc;
+  color: #39cccc;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 0.7rem;
+  margin: 0.5rem;
+  padding: 0.5rem 1rem;
+  box-shadow: 2px 2px #000;
+  cursor: pointer;
+}
+
+.day-tabs button.active {
+  background: #39cccc;
+  color: #2e1a47;
+}
+
+.schedule-items .item {
+  background: #faf1d8;
+  color: #2e1a47;
+  margin: 0.5rem 0;
+  padding: 0.8rem;
+  box-shadow: 4px 4px #000;
+  font-size: 0.8rem;
+  text-align: left;
+}
+
+.schedule-items .item span {
+  color: #ff4136;
+  display: block;
+  margin-bottom: 0.4rem;
+}
+
+.schedule-items .item.food {
+  background: #ffdc00;
+  color: #2e1a47;
+}
+
+.faq details {
+  background: #faf1d8;
+  color: #2e1a47;
+  margin: 0.8rem 0;
+  padding: 0.6rem;
+  box-shadow: 4px 4px #000;
+  font-size: 0.7rem;
+  text-align: left;
+  cursor: pointer;
+}
+
+.faq details summary {
+  cursor: pointer;
+}
+
+.sponsors .sponsor-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.sponsor {
+  background: #ff4136;
+  color: #faf1d8;
+  padding: 0.8rem;
+  box-shadow: 4px 4px #000;
+  font-size: 0.7rem;
+}
+
+footer {
+  margin-top: 3rem;
+  font-size: 0.8rem;
+  color: #ffdc00;
+}
+
+.glitch {
+  position: relative;
+  display: inline-block;
+  color: #faf1d8; /* your main pixel color */
+}
+
+.glitch::before,
+.glitch::after {
+  content: attr(data-text);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  pointer-events: none;
+  z-index: -1;
+  opacity: 0.8;
+}
+
+.glitch::before {
+  color: #ff4136;
+  transform: translate(-2px, 2px); /* always offset left-down */
+  animation: subtleGlitch 3s infinite;
+}
+
+.glitch::after {
+  color: #39cccc;
+  transform: translate(2px, -2px); /* always offset right-up */
+  animation: subtleGlitchAlt 2.7s infinite;
+}
+
+@keyframes subtleGlitch {
+  0%, 100% { transform: translate(-2px, 2px); }
+  25% { transform: translate(-3px, 1px); }
+  50% { transform: translate(-1px, 3px); }
+  75% { transform: translate(-2px, 2px); }
+}
+
+@keyframes subtleGlitchAlt {
+  0%, 100% { transform: translate(2px, -2px); }
+  25% { transform: translate(3px, -1px); }
+  50% { transform: translate(1px, -3px); }
+  75% { transform: translate(2px, -2px); }
+}
+
+.glitch:hover::before {
+  transform: translate(-4px, 4px);
+}
+
+.glitch:hover::after {
+  transform: translate(4px, -4px);
+}
+
+.logo-container {
+  position: absolute;
+  top: 10px;
+  left: -200px;
+  z-index: 1000;
+}
+
+.logo {
+  width: 300px;
+  height: auto;
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: linear-gradient(270deg, #4b0082, #1e6666, #4b0082);
+
+  background-size: 400% 400%;
+  animation: gradientShift 20s ease infinite;
+  opacity: 0.2;
+  pointer-events: none;
+  z-index: 0;
+}
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+
