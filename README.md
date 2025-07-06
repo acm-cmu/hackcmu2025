@@ -1,10 +1,10 @@
 # How to commit and deploy
 
-Check out the website here: https://www.acmatcmu.com/hackcmu2025/
-`git add .`
-`git commit -m "commit message"`
-`git push origin main`
-`npm run deploy`
+Check out the website here: https://www.acmatcmu.com/hackcmu2025/              
+`git add .`            
+`git commit -m "commit message"`               
+`git push origin main`           
+`npm run deploy`               
 
 # Getting Started with Create React App
 
