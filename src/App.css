@@ -245,11 +245,15 @@ body {
   font-size: 0.7rem;
   text-align: left;
   cursor: pointer;
+  transform: scaleY(1.1); 
 }
+
 
 .faq details summary {
   cursor: pointer;
+  line-height: 1.1; 
 }
+
 
 .sponsors .sponsor-grid {
   display: grid;

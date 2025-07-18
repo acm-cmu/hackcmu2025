@@ -94,7 +94,7 @@ function App() {
         <div className="divider"></div>
         <div className="event">
           <div className="title">Midnight Snack</div>
-          <div className="location">Gates La Prima (Gates 3rd floor)</div>
+          <div className="location">Tepper Simmons Auditorium</div>
           <div className="desc">Fuel up with some late-night snacks!</div>
         </div>
       </div>
@@ -107,7 +107,7 @@ function App() {
       <div className="divider"></div>
       <div className="event">
         <div className="title">Breakfast</div>
-        <div className="location">Across Rashid in the Glass Room</div>
+        <div className="location">Tepper Simmons Auditoriums</div>
         <div className="desc">Get breakfast after a long night of hacking!</div>
       </div>
     </div>
@@ -116,7 +116,7 @@ function App() {
       <div className="divider"></div>
       <div className="event">
         <div className="title">Lunch</div>
-        <div className="location">Across Rashid in the Glass Room</div>
+        <div className="location">Tepper Simmons Auditorium</div>
         <div className="desc">Grab a bite before submitting your final project.</div>
       </div>
     </div>
@@ -137,7 +137,7 @@ function App() {
       <div className="divider"></div>
       <div className="event">
         <div className="title">Judging</div>
-        <div className="location">Rangos Ballroom (CUC 2nd floor)</div>
+        <div className="location">Tepper Simmons Auditorium</div>
         <div className="desc">Judges will evaluate your projects — good luck!</div>
       </div>
     </div>
@@ -146,7 +146,7 @@ function App() {
       <div className="divider"></div>
       <div className="event">
         <div className="title">Expo</div>
-        <div className="location">Rangos Ballroom (CUC 2nd floor)</div>
+        <div className="location">Tepper Simmons Auditorium</div>
         <div className="desc">Show off your project to fellow hackers and attendees.</div>
       </div>
     </div>
@@ -168,9 +168,22 @@ function App() {
 
       <section className="faq">
         <h2>FAQ</h2>
-        <details><summary>What is HackCMU?</summary><p>A 24-hour event where students build something awesome.</p></details>
-        <details><summary>How do I register?</summary><p>Use the signup link provided on our site!</p></details>
-        <details><summary>What is this year's theme?</summary><p>Retro!</p></details>
+        <details><summary>What is HackCMU?</summary><p>A 24‑hour event where students from across campus come together to build apps, websites, or hardware hacks.</p></details>
+        <details><summary>How do I register?</summary><p>Register via our Google Forms link.</p></details>
+        <details><summary>What is this year's theme?</summary><p>“Cyberpunk.”</p></details>
+        <details><summary>When will project categories be released?</summary><p>They’ll be announced at the opening ceremony on Friday, September 13th.</p></details>
+        <details><summary>What if I'm an undergrad / graduate / doctoral student?</summary><p>All current CMU students (plus alumni and professors as mentors) are welcome; just confirm eligibility for each challenge before submitting.</p></details>
+        <details><summary>Where will HackCMU be held?</summary><p>Mainly in Rashid Auditorium, with additional hacking areas in the Gates building.</p></details>
+        <details><summary>How much does this cost?</summary><p>It’s free! We’ll provide meals, snacks, drinks, and swag thanks to our sponsors.</p></details>
+        <details><summary>What do I do after I register?</summary><p>Watch for a follow‑up email with details, and feel free to invite friends using the registration link.</p></details>
+        <details><summary>I’m not a “hacker”—can I still participate?</summary><p>Absolutely! Students of all skill levels and disciplines are encouraged to attend; just bring a willingness to learn.</p></details>
+        <details><summary>Are there teams? Do I need one to sign up?</summary><p>Teams are highly encouraged but not required; we’ll facilitate team formation on the day of the event.</p></details>
+        <details><summary>How big can a team be?</summary><p>Final teams can have up to four members.</p></details>
+        <details><summary>What are the rules? Can I work on my project ahead of time?</summary><p>All work must be original and begun during the event—brainstorming and idea generation beforehand is fine.</p></details>
+        <details><summary>How can I be entered into the raffle?</summary><p>Submit a project by the due date, and you’ll be automatically entered.</p></details>
+        <details><summary>Who runs this event?</summary><p>It’s organized by ACM@CMU—learn more at <a href="https://acmatcmu.com">acmatcmu.com</a>.</p></details>
+        <details><summary>Any other questions, comments, or concerns?</summary><p>Email us at <a href="mailto:acm-exec@cs.cmu.edu">acm-exec@cs.cmu.edu</a>, follow @acmatcmu on social media, join our LinkedIn group, and hop into our Discord server.</p></details>
+
       </section>
 
       <section className="sponsors">
