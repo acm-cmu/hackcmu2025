@@ -1,15 +1,27 @@
 import React, { useState } from 'react';
 import './App.css';
+import DotGrid from './components/DotGrid';
+
+
 
 function App() {
   const [selectedDay, setSelectedDay] = useState('friday');
 
   return (
     <div className="pixel-app">
-      <div className="logo-container">
-        <img src={`${process.env.PUBLIC_URL}/assets/designs/gates.png`} alt="Gates" className="logo" />
+      <div className="dot-grid-bg">
+        <DotGrid
+          dotSize={5}
+          gap={15}
+          baseColor = "#1F003F"
+          activeColor="#5227e1"
+          proximity={120}
+          shockRadius={250}
+          shockStrength={5}
+          resistance={750}
+          returnDuration={1.5}
+        />
       </div>
-
       <header className="hero">
         <h1>
           <span className="glitch" data-text="HACKCMU">HACKCMU</span>
@@ -164,10 +176,11 @@ function App() {
       <section className="sponsors">
         <h2>SPONSORS</h2>
         <div className="sponsor-grid">
-          <div className="sponsor">BigTech</div>
-          <div className="sponsor">CodeCo</div>
-          <div className="sponsor">HackSoft</div>
-          <div className="sponsor">CyberDuck</div>
+          <div className="sponsor">Anthropic</div>
+          <div className="sponsor">Hudson River Trading</div>
+          <div className="sponsor">Jane Street</div>
+          <div className="sponsor">The Trade Desk</div>
+          <div className="sponsor">Steven's Capital Management</div>
         </div>
       </section>
 
