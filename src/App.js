@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
 import DotGrid from './components/DotGrid';
-
+import FaqPage from './components/Faq';
 
 
 function App() {
@@ -163,7 +163,7 @@ function App() {
 )}
 
 </div>
-
+      <FaqPage/>
       </section>
 
       <section className="faq">
