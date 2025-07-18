@@ -57,6 +57,14 @@ const FaqPage = () => {
         content: `All work must be original, and you are not permitted to start building or designing your project until the event. Brainstorming ideas and forming teams beforehand is fine, though.`,
       },
       {
+        title: " Q: What is the judging criteria?",
+        content: `Projects will be judged based on: real-life usefulness, technological complexity, originality, and presentation/demo quality.`,
+      },
+      {
+        title: " Q: How do prizes work?",
+        content: `We will select one winner and one runner-up for each track. In addition, we will select an overall grand prize across all projects. We will also have sponsor-specific prizes that aren't restricted to any track.`,
+      },
+      {
         title: " Q: How can I be entered into the raffle?",
         content: `You'll be automatically entered into the raffle if you submit a project by the due date!`,
       },
