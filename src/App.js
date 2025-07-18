@@ -13,8 +13,12 @@ function App() {
         <DotGrid
           dotSize={5}
           gap={15}
-          baseColor = "#1F003F"
-          activeColor="#5227e1"
+          baseColor = "#2D1B4E"
+          activeColor="#00FFF7"
+          // baseColor = "#1F003F" choice 2
+          // activeColor="#5227e1" choice 2
+          // baseColor = "#1F003F" choice 1
+          // activeColor="#faf1d8" choice 1
           proximity={120}
           shockRadius={250}
           shockStrength={5}

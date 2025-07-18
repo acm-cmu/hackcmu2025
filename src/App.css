@@ -367,7 +367,9 @@ body::after {
   content: "";
   position: fixed;
   top: 0; left: 0; right: 0; bottom: 0;
-  background: #090012; 
+  background: #1A0D2E;
+  /* background: #090012; choice 2 */
+  /* background: #2e1a47; choice 1 */
 
   background-size: 400% 400%;
   animation: gradientShift 20s ease infinite;
