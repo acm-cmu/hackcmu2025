@@ -120,6 +120,7 @@
 .faq-row-wrapper {
   /* padding: 5vh 20vh 10vh 20vh; */
   width: auto;
+  font-family: 'Arial', sans-serif;
   margin: auto;
   background-color: black !important;
 }
@@ -135,7 +136,11 @@
 }
 .row-content {
   padding: 5px;
-  
+  color: white !important;
+}
+
+.rowContentColor {
+    color: white;
 }
 
 .faq-row-wrapper {

@@ -163,12 +163,11 @@ function App() {
 )}
 
 </div>
-      <h2>FAQ</h2>
+      <h2 style={{ marginTop: '3rem' }}>FAQ</h2>
       <FaqPage/>
       </section>
 
       <section className="faq">
-        <h2>FAQ</h2>
         <details><summary>What is HackCMU?</summary><p>A 24‑hour event where students from across campus come together to build apps, websites, or hardware hacks.</p></details>
         <details><summary>How do I register?</summary><p>Register via our Google Forms link.</p></details>
         <details><summary>What is this year's theme?</summary><p>“Cyberpunk.”</p></details>

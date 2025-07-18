@@ -68,16 +68,24 @@ const FaqPage = () => {
   };
 
   const config = {
-    // animate: true,
+    rowContentColor: 'grey',
+
     // arrowIcon: "V",
     // tabFocus: true
   };
+
+  const styles = {
+  // keep any other overrides you already have here…
+  rowContentColor: "white",   // answer text
+  rowTitleColor:   "white",   // question titles (optional)
+};
+
   return (
     <div id="faq-page" className="faq-page">
       <div className="faq-header"></div>{" "}
       {/* used to line up the scroll correctly */}
       <div className="faq-content">
-        <Faq data={data} styles={"./Faq.css"} config={config} />
+        <Faq data={data} styles={styles} config={config} />
       </div>
       <div className="faq-footer"></div>
     </div>
