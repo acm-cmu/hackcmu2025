@@ -163,6 +163,7 @@ function App() {
 )}
 
 </div>
+      <h2>FAQ</h2>
       <FaqPage/>
       </section>
 

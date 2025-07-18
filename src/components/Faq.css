@@ -119,7 +119,7 @@
 }
 .faq-row-wrapper {
   /* padding: 5vh 20vh 10vh 20vh; */
-  width: 80vw;
+  width: auto;
   margin: auto;
   background-color: black !important;
 }

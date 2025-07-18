@@ -76,7 +76,6 @@ const FaqPage = () => {
     <div id="faq-page" className="faq-page">
       <div className="faq-header"></div>{" "}
       {/* used to line up the scroll correctly */}
-      <div className="faq-title">FAQ</div>
       <div className="faq-content">
         <Faq data={data} styles={"./Faq.css"} config={config} />
       </div>
