@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/hackcmu2025/static/css/main.84577ddf.css",
-    "main.js": "/hackcmu2025/static/js/main.9410da16.js",
+    "main.js": "/hackcmu2025/static/js/main.bf01d1d1.js",
     "static/js/453.96453769.chunk.js": "/hackcmu2025/static/js/453.96453769.chunk.js",
     "index.html": "/hackcmu2025/index.html",
     "main.84577ddf.css.map": "/hackcmu2025/static/css/main.84577ddf.css.map",
-    "main.9410da16.js.map": "/hackcmu2025/static/js/main.9410da16.js.map",
+    "main.bf01d1d1.js.map": "/hackcmu2025/static/js/main.bf01d1d1.js.map",
     "453.96453769.chunk.js.map": "/hackcmu2025/static/js/453.96453769.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.84577ddf.css",
-    "static/js/main.9410da16.js"
+    "static/js/main.bf01d1d1.js"
   ]
 }
