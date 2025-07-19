@@ -191,8 +191,12 @@ function App() {
         </h1>
       <FaqPage/>
       
+      
       </section>
-      <Sponsors sponsors={sponsors} />
+      <h1 style={{ fontSize: "3rem", fontWeight: "bold"  }}>
+          <span data-text="SPONSORS">SPONSORS</span>
+        </h1>
+      <Sponsors />
 
       <footer>
         PRESENTED BY ACM@CMU

@@ -138,7 +138,6 @@ export default function Sponsors() {
   return (
     <div id="sponsors">
       <div className="container">
-        <div className="title" id="header">Sponsors</div>
         <div className="infotext">
           Our work here at ACM@CMU would not be possible without the help of our amazing sponsors.
           We are immeasurably thankful for their support.
