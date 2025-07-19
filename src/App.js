@@ -201,13 +201,13 @@ function App() {
           Interested in sponsoring us? Email us at <a href="mailto:acm-exec@cs.cmu.edu">acm-exec@cs.cmu.edu</a>.
         </div>
         <div className="white-bg" id="logo-grid">
-        <img src={`${process.env.PUBLIC_URL}/assets/sponsors/citadel.webp`} alt="Gates" className="sponsor-link"/>
+        <img src={`${process.env.PUBLIC_URL}/assets/sponsors/citadel.png`} alt="Gates" className="sponsor-link"/>
         <img src={`${process.env.PUBLIC_URL}/assets/sponsors/thetradedesk.webp`} alt="Gates" className="sponsor-link"/>
       </div>
       </div>
       </div>
       
-      
+      <img src={`${process.env.PUBLIC_URL}/assets/sponsors/citadel.png`} alt="Gates" className="sponsor-link"/>
 
       <footer>
         PRESENTED BY <a href="https://www.acmatcmu.com/" target="_blank" rel="noopener noreferrer">ACM@CMU</a>
