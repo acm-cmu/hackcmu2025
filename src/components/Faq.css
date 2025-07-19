@@ -114,14 +114,16 @@
   position: relative;
   background-image: linear-gradient(
     45deg,
-    #363a65,
-    #363a65
+    #2D1B4E,
+    #2D1B4E
   );
   padding: 50px;
   z-index: 2;
+  border: 2px solid #faf1d8;
 }
 .faq-row-wrapper {
-  color: #363a65;
+  color: #2D1B4E;
+
 }
 .faq-row-wrapper {
   /* padding: 5vh 20vh 10vh 20vh; */
