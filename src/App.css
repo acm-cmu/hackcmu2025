@@ -110,6 +110,7 @@ body::after {
   background:transparent; border:2px solid #39cccc; color:#39cccc;
   font-size:.7rem; margin:.5rem; padding:.5rem 1rem;
   box-shadow:2px 2px #000; cursor:pointer;
+  font-family: 'Press Start 2P', cursive;
 }
 .day-tabs .active{ background:#39cccc; color:#2e1a47; }
 
@@ -172,40 +173,6 @@ footer a:hover{ text-decoration:none; }
   footer          { font-size:.6rem; }
 }
 
-@media (min-width: 500px){
-  .schedule{                  
-    margin-top: 10vw;   
-  }}
-
-@media (min-width: 525px){
-  .schedule{                  
-    margin-top: 15vw;   
-  }}
-
-  @media (min-width: 550px){
-  .schedule{                  
-    margin-top: 20vw;   
-  }}
-
-    @media (min-width: 575px){
-  .schedule{                  
-    margin-top: 25vw;   
-  }}
-
-@media (min-width: 600px){
-  .schedule{                  
-    margin-top: 30vw;   
-  }}
-
-@media (min-width: 625px){
-  .schedule{                  
-    margin-top: 35vw;   
-  }}
-
-@media (min-width: 650px){
-  .schedule{                  
-    margin-top: 40vw;   
-  }}
 
 
 @media (min-width: 768px){
@@ -223,6 +190,13 @@ footer a:hover{ text-decoration:none; }
   }
 }
 
+@media (max-width: 800px){
+.hero-bg-img {
+  position: absolute; top:0; left:0; max-width:0%; height:auto;
+  transform: translate(-30%,10%);
+  pointer-events:none; z-index:1;
+}
+}
 
 @media (min-width: 840px){
 .schedule{                  
@@ -281,7 +255,16 @@ footer a:hover{ text-decoration:none; }
 @media (min-width: 1200px){
 .hero {
   transform: translateX(5%);
-}}
+}
+.hero-bg-img {
+  position: absolute; top:0; left:0; max-width:90%; height:auto;
+  transform: translate(-30%,5%);
+  pointer-events:none; z-index:1;
+}
+.schedule{                  
+    margin-top: 15vw;   
+  }
+}
 
 @media (max-width: 768px){
   .terminal-box {
