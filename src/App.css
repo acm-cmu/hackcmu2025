@@ -489,3 +489,22 @@ body::after {
   text-decoration: underline; /* optional: adds hover effect */
 }
 
+.sponsor-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 40px;
+  justify-items: center;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.sponsor-image {
+  max-width: 200px;
+  height: auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sponsor-image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}

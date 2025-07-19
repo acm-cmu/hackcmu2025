@@ -209,7 +209,7 @@ function App() {
       <div className="infotext">
         Interested in sponsoring us? Email us at <a href="mailto:acm-exec@cs.cmu.edu">acm-exec@cs.cmu.edu</a>.
       </div>
-
+      <div className="sponsor-grid">
       <img src={citadel}       alt="Citadel"          className="sponsor-image" />
       <img src={thetradedesk}  alt="The Trade Desk"   className="sponsor-image" />
       <img src={hrt}           alt="Hudson River Trading" className="sponsor-image" />
@@ -221,7 +221,7 @@ function App() {
       <img src={ethereum}      alt="Ethereum Foundation" className="sponsor-image" />
       <img src={sandia}        alt="Sandia National Laboratories" className="sponsor-image" />
       <img src={scm}           alt="Steven's Capital Management" className="sponsor-image" />
-
+      </div>
       <footer>
         PRESENTED BY <a href="https://www.acmatcmu.com/" target="_blank" rel="noopener noreferrer">ACM@CMU</a>
       </footer>
