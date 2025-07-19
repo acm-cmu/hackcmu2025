@@ -26,7 +26,13 @@ function App() {
           returnDuration={1.5}
         />
       </div>
-      <header className="hero">
+      <div className="hero-wrapper">
+  <img
+    src={`${process.env.PUBLIC_URL}/assets/designs/gates5.png`}
+    alt="Gates"
+    className="hero-bg-img"
+  />
+      <div className="hero">
         <h1 style={{ fontSize: "6rem", fontWeight: "bold" }}>
           <span className="glitch" data-text="HACKCMU">HACKCMU</span>
         </h1>        
@@ -35,11 +41,12 @@ function App() {
           <button className="start-button">Sign Up</button>
         </a>
         <p className="subtext">Sign up as a hacker or mentor</p>
-      </header>
-
-      <div className="logo-scroll-container">
-      <img src={`${process.env.PUBLIC_URL}/assets/designs/gates5.png`} alt="Gates" className="logo-scroll" />
+      </div>
     </div>
+
+    <h1 style={{ fontSize: "50rem" }}>
+          <span data-text=""></span>
+        </h1> 
 
       <section className="about">
         <div className="terminal-box">

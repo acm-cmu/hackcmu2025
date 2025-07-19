@@ -377,6 +377,35 @@ footer {
   /* image-rendering: pixelated; */
 }
 
+.hero-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  z-index: 2;
+}
+
+.hero-bg-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  /* opacity: 0.5; */
+  z-index: 1;
+  pointer-events: none;
+  image-rendering: pixelated;
+  transform: translateX(-30%);
+  /* transform: translateY(10px); */
+}
+
+.hero {
+  position: relative;
+  z-index: 2;
+  padding-top: 3rem;
+  text-align: right;
+  transform: translateX(20%);
+}
 
 
 body::after {
