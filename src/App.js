@@ -4,7 +4,17 @@ import DotGrid from './components/DotGrid';
 import FaqPage from './components/Faq';
 import Sponsors from './components/Sponsors';
 import "./components/Sponsors.css";
-import Citadel from "./sponsors/citadel.webp"
+import citadel from "./sponsors/citadel.webp"
+import thetradedesk from "./sponsors/thetradedesk.webp";
+import hrt from "./sponsors/hrt.webp";
+import stripe from "./sponsors/stripe.webp";
+import deshaw from "./sponsors/deshaw.webp";
+import janestreet from "./sponsors/janestreet.webp";
+import lockheed from "./sponsors/lockheed.webp";
+import anthropic from "./sponsors/anthropic.webp";
+import ethereum from "./sponsors/ethereum.webp";
+import sandia from "./sponsors/sandia.webp";
+import scm from "./sponsors/scm.webp";
 
 function App() {
   const [selectedDay, setSelectedDay] = useState('friday');
@@ -191,11 +201,26 @@ function App() {
       <h1 style={{ fontSize: "3rem", fontWeight: "bold"  }}>
           <span className="glitch" data-text="SPONSORS">SPONSORS</span>
         </h1>
-      {/* <Sponsors /> */}
-      <img
-        src={Citadel}
-        alt="Citadel"
-      />
+      
+      <div className="infotext">
+          Our work here at ACM@CMU would not be possible without the help of our amazing sponsors.
+          We are immeasurably thankful for their support.
+      </div>
+      <div className="infotext">
+        Interested in sponsoring us? Email us at <a href="mailto:acm-exec@cs.cmu.edu">acm-exec@cs.cmu.edu</a>.
+      </div>
+
+      <img src={citadel}       alt="Citadel"          className="sponsor-image" />
+      <img src={thetradedesk}  alt="The Trade Desk"   className="sponsor-image" />
+      <img src={hrt}           alt="Hudson River Trading" className="sponsor-image" />
+      <img src={stripe}        alt="Stripe"           className="sponsor-image" />
+      <img src={deshaw}        alt="D. E. Shaw"       className="sponsor-image" />
+      <img src={janestreet}    alt="Jane Street"      className="sponsor-image" />
+      <img src={lockheed}      alt="Lockheed Martin"  className="sponsor-image" />
+      <img src={anthropic}     alt="Anthropic"        className="sponsor-image" />
+      <img src={ethereum}      alt="Ethereum Foundation" className="sponsor-image" />
+      <img src={sandia}        alt="Sandia National Laboratories" className="sponsor-image" />
+      <img src={scm}           alt="Steven's Capital Management" className="sponsor-image" />
 
       <footer>
         PRESENTED BY <a href="https://www.acmatcmu.com/" target="_blank" rel="noopener noreferrer">ACM@CMU</a>
