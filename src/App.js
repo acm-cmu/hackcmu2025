@@ -6,13 +6,6 @@ import Sponsors from './components/Sponsors';
 
 function App() {
   const [selectedDay, setSelectedDay] = useState('friday');
-  const sponsors = [
-        { name: 'Anthropic', logo: '/assets/sponsors/anthropic.png' },
-        { name: 'Hudson River Trading', logo: '/assets/sponsors/hrt.png' },
-        { name: 'Jane Street', logo: '/assets/sponsors/janestreet.png' },
-        { name: 'The Trade Desk', logo: '/assets/sponsors/tradedesk.png' },
-        { name: 'Steven\'s Capital', logo: '/assets/sponsors/scm.png' }
-      ];
 
   return (
     <div className="pixel-app">

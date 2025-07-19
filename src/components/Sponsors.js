@@ -1,43 +1,18 @@
 import React, { useState } from "react";
 import "./Sponsors.css";
 
-// Reusable image component with webp fallback
-function ResponsiveImage({ src, alt, className }) {
-  const publicSrc = `${process.env.PUBLIC_URL}/${src}`;
-  const webpSrc = publicSrc.replace(/\.png$/, '.webp');
-
-  const handleError = (e) => {
-    if (e.target.src.endsWith('.webp')) {
-      e.target.src = publicSrc;
-    }
-  };
-
-  return (
-    <picture>
-      <source srcSet={webpSrc} type="image/webp" onError={handleError} />
-      <source srcSet={publicSrc} type="image/png" />
-      <img
-        src={publicSrc}
-        alt={alt}
-        className={className}
-        loading="lazy"
-        onError={handleError}
-      />
-    </picture>
-  );
-}
-
-// Optional popup (if still needed)
+// Optional popup
 function Popup({ sponsor, onClose }) {
   if (!sponsor) return null;
 
   return (
     <div className="popup-overlay" onClick={onClose}>
       <div className="popup-content" onClick={(e) => e.stopPropagation()}>
-        <ResponsiveImage
+        <img
           src={sponsor.imagePopup}
           alt={sponsor.name}
           className="popup-image"
+          loading="lazy"
         />
         <div className="popup-text">
           <h2>{sponsor.name}</h2>
@@ -58,78 +33,78 @@ export default function Sponsors() {
   const sponsors = [
     {
       name: "Citadel",
-      imagePage: "assets/sponsors/citadel.png",
-      imagePopup: "assets/sponsors/citadel.png",
+      imagePage: `${process.env.PUBLIC_URL}/assets/sponsors/citadel.webp`,
+      imagePopup: `${process.env.PUBLIC_URL}/assets/sponsors/citadel.webp`,
       description: "A leading global financial institution.",
       link: "https://www.citadel.com",
     },
     {
       name: "The Trade Desk",
-      imagePage: "assets/sponsors/thetradedesk.png",
-      imagePopup: "assets/sponsors/thetradedesk.png",
+      imagePage: `${process.env.PUBLIC_URL}/assets/sponsors/thetradedesk.webp`,
+      imagePopup: `${process.env.PUBLIC_URL}/assets/sponsors/thetradedesk.webp`,
       description: "World-class digital advertising platform.",
       link: "https://www.thetradedesk.com/us",
     },
     {
       name: "HRT",
-      imagePage: "assets/sponsors/hrt.png",
-      imagePopup: "assets/sponsors/hrt.png",
+      imagePage: `${process.env.PUBLIC_URL}/assets/sponsors/hrt.webp`,
+      imagePopup: `${process.env.PUBLIC_URL}/assets/sponsors/hrt.webp`,
       description: "Hudson River Trading, quantitative trading firm.",
       link: "https://www.hudsonrivertrading.com/",
     },
     {
       name: "Stripe",
-      imagePage: "assets/sponsors/stripe.png",
-      imagePopup: "assets/sponsors/stripe.png",
+      imagePage: `${process.env.PUBLIC_URL}/assets/sponsors/stripe.webp`,
+      imagePopup: `${process.env.PUBLIC_URL}/assets/sponsors/stripe.webp`,
       description: "Online payment processing for internet businesses.",
       link: "https://stripe.com",
     },
     {
       name: "D. E. Shaw",
-      imagePage: "assets/sponsors/deshaw.png",
-      imagePopup: "assets/sponsors/deshaw.png",
+      imagePage: `${process.env.PUBLIC_URL}/assets/sponsors/deshaw.webp`,
+      imagePopup: `${process.env.PUBLIC_URL}/assets/sponsors/deshaw.webp`,
       description: "A global investment and technology development firm.",
       link: "https://www.deshaw.com",
     },
     {
       name: "Jane Street",
-      imagePage: "assets/sponsors/janestreet.png",
-      imagePopup: "assets/sponsors/janestreet.png",
+      imagePage: `${process.env.PUBLIC_URL}/assets/sponsors/janestreet.webp`,
+      imagePopup: `${process.env.PUBLIC_URL}/assets/sponsors/janestreet.webp`,
       description: "Global trading firm.",
       link: "https://www.janestreet.com",
     },
     {
       name: "Lockheed Martin",
-      imagePage: "assets/sponsors/lockheed.png",
-      imagePopup: "assets/sponsors/lockheed.png",
+      imagePage: `${process.env.PUBLIC_URL}/assets/sponsors/lockheed.webp`,
+      imagePopup: `${process.env.PUBLIC_URL}/assets/sponsors/lockheed.webp`,
       description: "Aerospace and defense company.",
       link: "https://www.lockheedmartin.com",
     },
     {
       name: "Anthropic",
-      imagePage: "assets/sponsors/anthropic.png",
-      imagePopup: "assets/sponsors/anthropic.png",
+      imagePage: `${process.env.PUBLIC_URL}/assets/sponsors/anthropic.webp`,
+      imagePopup: `${process.env.PUBLIC_URL}/assets/sponsors/anthropic.webp`,
       description: "AI safety and research company.",
       link: "https://www.anthropic.com",
     },
     {
       name: "Ethereum",
-      imagePage: "assets/sponsors/ethereum.png",
-      imagePopup: "assets/sponsors/ethereum.png",
+      imagePage: `${process.env.PUBLIC_URL}/assets/sponsors/ethereum.webp`,
+      imagePopup: `${process.env.PUBLIC_URL}/assets/sponsors/ethereum.webp`,
       description: "Open-source blockchain with smart contract functionality.",
       link: "https://ethereum.org",
     },
     {
       name: "Sandia",
-      imagePage: "assets/sponsors/sandia.png",
-      imagePopup: "assets/sponsors/sandia.png",
+      imagePage: `${process.env.PUBLIC_URL}/assets/sponsors/sandia.webp`,
+      imagePopup: `${process.env.PUBLIC_URL}/assets/sponsors/sandia.webp`,
       description: "National security laboratory.",
       link: "https://www.sandia.gov",
     },
     {
       name: "SCM",
-      imagePage: "assets/sponsors/scm.png",
-      imagePopup: "assets/sponsors/scm.png",
+      imagePage: `${process.env.PUBLIC_URL}/assets/sponsors/scm.webp`,
+      imagePopup: `${process.env.PUBLIC_URL}/assets/sponsors/scm.webp`,
       description: "Systematic Capital Management.",
       link: "https://www.scm-lp.com/",
     },
@@ -154,7 +129,11 @@ export default function Sponsors() {
               key={index}
               onClick={() => setSelectedSponsor(sponsor)}
             >
-              <ResponsiveImage src={sponsor.imagePage} alt={sponsor.name} />
+              <img
+                src={sponsor.imagePage}
+                alt={sponsor.name}
+                loading="lazy"
+              />
             </div>
           ))}
         </div>
