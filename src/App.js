@@ -58,12 +58,14 @@ function App() {
       </div>
     </div>
     {/* blank space lol */}
-    <h1 style={{ fontSize: "40rem" }}>
+    <h1 style={{ fontSize: "36rem" }}>
           <span data-text=""></span>
         </h1> 
 
       <section className="schedule">
-        <h2>SCHEDULE</h2>
+        <h1 style={{ fontSize: "3rem", fontWeight: "bold" }}>
+          <span data-text="SCHEDULE">SCHEDULE</span>
+        </h1>
         <div className="day-tabs">
           <button className={selectedDay === 'friday' ? 'active' : ''} onClick={() => setSelectedDay('friday')}>
             FRIDAY 9/12
@@ -176,11 +178,15 @@ function App() {
 )}
 
 </div>
-      <h2 style={{ marginTop: '3rem' }}>FAQ</h2>
+      <h1 style={{ fontSize: "3rem", fontWeight: "bold", marginTop: '5rem' }}>
+          <span data-text="FAQ">FAQ</span>
+        </h1>
       <FaqPage/>
       </section>
       <section className="sponsors">
-        <h2>SPONSORS</h2>
+        <h1 style={{ fontSize: "3rem", fontWeight: "bold" }}>
+          <span data-text="SPONSORS">SPONSORS</span>
+        </h1>
         <div className="sponsor-grid">
           <div className="sponsor">Anthropic</div>
           <div className="sponsor">Hudson River Trading</div>
