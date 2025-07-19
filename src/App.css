@@ -278,6 +278,16 @@ footer {
   color: #ffdc00;
 }
 
+footer a {
+  color: #ffdc00;
+  text-decoration: underline;
+}
+
+footer a:hover {
+  text-decoration: none; /* optional: remove underline on hover */
+}
+
+
 .glitch {
   position: relative;
   display: inline-block;

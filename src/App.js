@@ -199,8 +199,9 @@ function App() {
       <Sponsors />
 
       <footer>
-        PRESENTED BY ACM@CMU
+        PRESENTED BY <a href="https://www.acmatcmu.com/" target="_blank" rel="noopener noreferrer">ACM@CMU</a>
       </footer>
+
     </div>
   );
 }
