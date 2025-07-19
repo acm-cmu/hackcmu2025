@@ -182,6 +182,7 @@ function App() {
           <span data-text="FAQ">FAQ</span>
         </h1>
       <FaqPage/>
+      
       </section>
       <section className="sponsors">
         <h1 style={{ fontSize: "3rem", fontWeight: "bold" }}>

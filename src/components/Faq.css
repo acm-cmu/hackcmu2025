@@ -90,7 +90,7 @@
   .styles_row-body__1NvUo
   .styles_faq-row__2YF3c
   .styles_row-title__1YiiY {
-  background-color: rgb(255, 255, 255) !important;
+  background-color: #faf1d8 !important;
   border-radius: 25px !important;
   padding-top: 15px !important;
   padding-right: 10px !important;
@@ -103,8 +103,12 @@
   
 }
 
+.styles_row-content-text__2sgAB .row-content-text {
+  color: #faf1d8 !important;
+}
+
 .custom-link {
-  color: white; 
+  color: #faf1d8;
 }
 .faq-body {
   position: relative;
@@ -138,11 +142,11 @@
 }
 .row-content {
   padding: 5px;
-  color: white !important;
+  color: #faf1d8 !important;
 }
 
 .rowContentColor {
-    color: white;
+    color: #faf1d8;
 }
 
 .faq-row-wrapper {

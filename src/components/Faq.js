@@ -88,8 +88,7 @@ const FaqPage = () => {
 
   const styles = {
   // keep any other overrides you already have here…
-  rowContentColor: "white",   // answer text
-  rowTitleColor:   "white",   // question titles (optional)
+  rowContentColor: "#faf1d8",   // answer text
 };
 
   return (
