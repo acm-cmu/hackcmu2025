@@ -284,3 +284,4 @@ function Sponsor({ link, img, alt }) {
 }
 
 export default App;
+
