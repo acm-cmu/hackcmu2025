@@ -199,45 +199,44 @@ function App() {
           Interested in sponsoring us? Email&nbsp;
           <a href="mailto:acm-exec@cs.cmu.edu">acm-exec@cs.cmu.edu</a>.
         </p>
-
-        <div className="sponsor-grid">
-          <Sponsor link="https://www.citadel.com/" img={citadel} alt="Citadel" />
-          <Sponsor
-            link="https://www.thetradedesk.com/"
-            img={thetradedesk}
-            alt="The Trade Desk"
-          />
-          <Sponsor
-            link="https://www.hudsonrivertrading.com/"
-            img={hrt}
-            alt="Hudson River Trading"
-          />
-          <Sponsor link="https://stripe.com/" img={stripe} alt="Stripe" />
-          <Sponsor link="https://www.deshaw.com/" img={deshaw} alt="D. E. Shaw" />
-          <Sponsor link="https://www.janestreet.com/" img={janestreet} alt="Jane Street" />
-          <Sponsor
-            link="https://www.lockheedmartin.com/"
-            img={lockheed}
-            alt="Lockheed Martin"
-          />
-          <Sponsor
-            link="https://www.anthropic.com/"
-            img={anthropic}
-            alt="Anthropic"
-          />
-          <Sponsor
-            link="https://ethereum.foundation/"
-            img={ethereum}
-            alt="Ethereum Foundation"
-          />
-          <Sponsor link="https://www.sandia.gov/" img={sandia} alt="Sandia Labs" />
-          <Sponsor
-            link="https://www.scm-lp.com/"
-            img={scm}
-            alt="Steven's Capital Mgmt"
-          />
-        </div>
       </section>
+
+        
+      <div className="sponsor-grid">
+  <a href="https://www.citadel.com/" target="_blank" rel="noopener noreferrer">
+    <img src={citadel} alt="Citadel" className="sponsor-image" />
+  </a>
+  <a href="https://www.thetradedesk.com/" target="_blank" rel="noopener noreferrer">
+    <img src={thetradedesk} alt="The Trade Desk" className="sponsor-image" />
+  </a>
+  <a href="https://www.hudsonrivertrading.com/" target="_blank" rel="noopener noreferrer">
+    <img src={hrt} alt="Hudson River Trading" className="sponsor-image" />
+  </a>
+  <a href="https://stripe.com/" target="_blank" rel="noopener noreferrer">
+    <img src={stripe} alt="Stripe" className="sponsor-image" />
+  </a>
+  <a href="https://www.deshaw.com/" target="_blank" rel="noopener noreferrer">
+    <img src={deshaw} alt="D. E. Shaw" className="sponsor-image" />
+  </a>
+  <a href="https://www.janestreet.com/" target="_blank" rel="noopener noreferrer">
+    <img src={janestreet} alt="Jane Street" className="sponsor-image" />
+  </a>
+  <a href="https://www.lockheedmartin.com/" target="_blank" rel="noopener noreferrer">
+    <img src={lockheed} alt="Lockheed Martin" className="sponsor-image" />
+  </a>
+  <a href="https://www.anthropic.com/" target="_blank" rel="noopener noreferrer">
+    <img src={anthropic} alt="Anthropic" className="sponsor-image" />
+  </a>
+  <a href="https://ethereum.foundation/" target="_blank" rel="noopener noreferrer">
+    <img src={ethereum} alt="Ethereum Foundation" className="sponsor-image" />
+  </a>
+  <a href="https://www.sandia.gov/" target="_blank" rel="noopener noreferrer">
+    <img src={sandia} alt="Sandia National Laboratories" className="sponsor-image" />
+  </a>
+  <a href="https://www.scm-lp.com/" target="_blank" rel="noopener noreferrer">
+    <img src={scm} alt="Steven's Capital Management" className="sponsor-image" />
+  </a>
+</div>
 
       <footer>
         PRESENTED BY{' '}
