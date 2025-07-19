@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import './App.css';
 import DotGrid from './components/DotGrid';
 import FaqPage from './components/Faq';
+import MetricsRotator from './components/MetricsRotator'; 
+import CardSwap, { Card } from './components/CardSwap'
 
 
 function App() {
@@ -33,6 +35,7 @@ function App() {
     className="hero-bg-img"
   />
       <div className="hero">
+
         <h1 style={{ fontSize: "6rem", fontWeight: "bold" }}>
           <span className="glitch" data-text="HACKCMU">HACKCMU</span>
         </h1>        
@@ -40,11 +43,13 @@ function App() {
         <a href="https://forms.gle/Qit8dRRjE8M516dy9" target="_blank" rel="noopener noreferrer">
           <button className="start-button">Sign Up</button>
         </a>
-        <p className="subtext">Sign up as a hacker or mentor</p>
+        
+        
+        {/* <p className="subtext">Sign up as a hacker or mentor</p> */}
       </div>
     </div>
-
-    <h1 style={{ fontSize: "50rem" }}>
+    {/* blank space lol */}
+    <h1 style={{ fontSize: "60rem" }}>
           <span data-text=""></span>
         </h1> 
 
