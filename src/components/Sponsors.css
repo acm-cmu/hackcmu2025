@@ -32,3 +32,8 @@
   height: auto;
   image-rendering: pixelated;
 }
+
+.infotext {
+  margin-bottom: 20px; /* adjust spacing as needed */
+  line-height: 1.6;     /* optional: improves readability */
+}
