@@ -27,11 +27,21 @@
   margin-top: 40px;
 }
 
-#logo-grid .sponsor-link img {
+.sponsor-link {
+  display: inline-block;
+}
+
+.sponsor-image {
   max-width: 220px;
   height: auto;
-  image-rendering: pixelated;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+.sponsor-image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
 
 .infotext {
   margin-bottom: 20px; /* adjust spacing as needed */

@@ -209,19 +209,43 @@ function App() {
       <div className="infotext">
         Interested in sponsoring us? Email us at <a href="mailto:acm-exec@cs.cmu.edu">acm-exec@cs.cmu.edu</a>.
       </div>
+
       <div className="sponsor-grid">
-      <img src={citadel}       alt="Citadel"          className="sponsor-image" />
-      <img src={thetradedesk}  alt="The Trade Desk"   className="sponsor-image" />
-      <img src={hrt}           alt="Hudson River Trading" className="sponsor-image" />
-      <img src={stripe}        alt="Stripe"           className="sponsor-image" />
-      <img src={deshaw}        alt="D. E. Shaw"       className="sponsor-image" />
-      <img src={janestreet}    alt="Jane Street"      className="sponsor-image" />
-      <img src={lockheed}      alt="Lockheed Martin"  className="sponsor-image" />
-      <img src={anthropic}     alt="Anthropic"        className="sponsor-image" />
-      <img src={ethereum}      alt="Ethereum Foundation" className="sponsor-image" />
-      <img src={sandia}        alt="Sandia National Laboratories" className="sponsor-image" />
-      <img src={scm}           alt="Steven's Capital Management" className="sponsor-image" />
-      </div>
+  <a href="https://www.citadel.com/" target="_blank" rel="noopener noreferrer">
+    <img src={citadel} alt="Citadel" className="sponsor-image" />
+  </a>
+  <a href="https://www.thetradedesk.com/" target="_blank" rel="noopener noreferrer">
+    <img src={thetradedesk} alt="The Trade Desk" className="sponsor-image" />
+  </a>
+  <a href="https://www.hudsonrivertrading.com/" target="_blank" rel="noopener noreferrer">
+    <img src={hrt} alt="Hudson River Trading" className="sponsor-image" />
+  </a>
+  <a href="https://stripe.com/" target="_blank" rel="noopener noreferrer">
+    <img src={stripe} alt="Stripe" className="sponsor-image" />
+  </a>
+  <a href="https://www.deshaw.com/" target="_blank" rel="noopener noreferrer">
+    <img src={deshaw} alt="D. E. Shaw" className="sponsor-image" />
+  </a>
+  <a href="https://www.janestreet.com/" target="_blank" rel="noopener noreferrer">
+    <img src={janestreet} alt="Jane Street" className="sponsor-image" />
+  </a>
+  <a href="https://www.lockheedmartin.com/" target="_blank" rel="noopener noreferrer">
+    <img src={lockheed} alt="Lockheed Martin" className="sponsor-image" />
+  </a>
+  <a href="https://www.anthropic.com/" target="_blank" rel="noopener noreferrer">
+    <img src={anthropic} alt="Anthropic" className="sponsor-image" />
+  </a>
+  <a href="https://ethereum.foundation/" target="_blank" rel="noopener noreferrer">
+    <img src={ethereum} alt="Ethereum Foundation" className="sponsor-image" />
+  </a>
+  <a href="https://www.sandia.gov/" target="_blank" rel="noopener noreferrer">
+    <img src={sandia} alt="Sandia National Laboratories" className="sponsor-image" />
+  </a>
+  <a href="https://www.scm-lp.com/" target="_blank" rel="noopener noreferrer">
+    <img src={scm} alt="Steven's Capital Management" className="sponsor-image" />
+  </a>
+</div>
+
       <footer>
         PRESENTED BY <a href="https://www.acmatcmu.com/" target="_blank" rel="noopener noreferrer">ACM@CMU</a>
       </footer>
