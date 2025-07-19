@@ -72,7 +72,7 @@ function App() {
 
       <section className="schedule">
         <h1 style={{ fontSize: "3rem", fontWeight: "bold" }}>
-          <span data-text="SCHEDULE">SCHEDULE</span>
+          <span className="glitch" data-text="SCHEDULE">SCHEDULE</span>
         </h1>
         <div className="day-tabs">
           <button className={selectedDay === 'friday' ? 'active' : ''} onClick={() => setSelectedDay('friday')}>
@@ -187,14 +187,14 @@ function App() {
 
 </div>
       <h1 style={{ fontSize: "3rem", fontWeight: "bold", marginTop: '5rem' }}>
-          <span data-text="FAQ">FAQ</span>
+          <span className="glitch" data-text="FAQ">FAQ</span>
         </h1>
       <FaqPage/>
       
       
       </section>
       <h1 style={{ fontSize: "3rem", fontWeight: "bold"  }}>
-          <span data-text="SPONSORS">SPONSORS</span>
+          <span className="glitch" data-text="SPONSORS">SPONSORS</span>
         </h1>
       <Sponsors />
 
