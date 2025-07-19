@@ -37,3 +37,13 @@
   margin-bottom: 20px; /* adjust spacing as needed */
   line-height: 1.6;     /* optional: improves readability */
 }
+
+.infotext a {
+  color: #39cccc;
+  text-decoration: none; /* optional: removes underline */
+}
+
+.infotext a:hover {
+  text-decoration: underline; /* optional: adds hover effect */
+}
+
