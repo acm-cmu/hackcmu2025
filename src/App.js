@@ -27,15 +27,19 @@ function App() {
         />
       </div>
       <header className="hero">
-        <h1>
+        <h1 style={{ fontSize: "6rem", fontWeight: "bold" }}>
           <span className="glitch" data-text="HACKCMU">HACKCMU</span>
-        </h1>
+        </h1>        
         <p className="date">September 12-13, 2025</p>
         <a href="https://forms.gle/Qit8dRRjE8M516dy9" target="_blank" rel="noopener noreferrer">
           <button className="start-button">Sign Up</button>
         </a>
         <p className="subtext">Sign up as a hacker or mentor</p>
       </header>
+
+      <div className="logo-scroll-container">
+      <img src={`${process.env.PUBLIC_URL}/assets/designs/gates5.png`} alt="Gates" className="logo-scroll" />
+    </div>
 
       <section className="about">
         <div className="terminal-box">
