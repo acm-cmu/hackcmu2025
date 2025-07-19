@@ -1,0 +1,184 @@
+/* ---------- imports & defaults ---------- */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  color: #faf1d8;
+  background: #2e1a47;
+  font-family: 'Press Start 2P', cursive;
+  text-align: center;
+  image-rendering: pixelated;
+  padding: 20px;
+}
+
+/* ---------- animated dotted background ---------- */
+body::before {
+  content: "";
+  position: fixed; inset: 0;
+  background: radial-gradient(circle, rgba(255,255,255,0.15) 1px, transparent 1px);
+  background-size: 20px 20px, 40px 40px;
+  animation: moveStars 20s linear infinite;
+  z-index: 0;
+  pointer-events: none;
+}
+@keyframes moveStars {
+  from { background-position: 0 0, 0 0; }
+  to   { background-position: 200px 200px, 400px 400px; }
+}
+
+/* dynamic gradient overlay */
+body::after {
+  content: "";
+  position: fixed; inset: 0;
+  background: #1A0D2E;
+  background-size: 400% 400%;
+  animation: gradientShift 20s ease infinite;
+  opacity: 0.9;
+  pointer-events: none;
+  z-index: 0;
+}
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* ---------- layout helpers ---------- */
+.pixel-app  { max-width: 1000px; margin: 0 auto; position: relative; z-index: 1; }
+.hero-wrapper { position: relative; width: 100%; }
+.dot-grid-bg  { position: fixed; inset: 0; pointer-events:none; z-index:-10; }
+
+.hero-bg-img {
+  position: absolute; top:0; left:0; width:100%; height:auto;
+  transform: translate(-30%,10%);
+  pointer-events:none; z-index:1;
+}
+
+/* ---------- hero ---------- */
+.hero {
+  position: relative; z-index:2;
+  padding-top: 3rem;
+  text-align: right;
+}
+
+.hero-title { font-size: 6rem; font-weight: 700; text-shadow: 4px 4px #000; }
+
+.date        { font-size: 1rem;  color:#ffdc00; text-shadow: 2px 2px #000; }
+.start-button{
+  font-family: 'Press Start 2P', cursive;
+  background:#faf1d8; color:#ff4136; border:none;
+  padding:15px 30px; font-size:1rem; margin:1.5rem 0;
+  box-shadow:4px 4px #000; cursor:pointer; transition:all .2s;
+}
+.start-button:hover { box-shadow:2px 2px #000; transform:translate(2px,2px); }
+
+/* glitch text effect */
+.glitch{ position:relative; display:inline-block; }
+.glitch::before, .glitch::after{
+  content:attr(data-text); position:absolute; left:0; top:0; width:100%;
+  pointer-events:none; z-index:-1; opacity:.8;
+}
+.glitch::before{ color:#ff4136; transform:translate(-2px,2px);  animation:subtleGlitch 3s infinite; }
+.glitch::after { color:#39cccc; transform:translate( 2px,-2px); animation:subtleGlitchAlt 2.7s infinite; }
+@keyframes subtleGlitch{
+  0%,100%{transform:translate(-2px,2px);} 25%{transform:translate(-3px,1px);}
+  50%{transform:translate(-1px,3px);}     75%{transform:translate(-2px,2px);}
+}
+@keyframes subtleGlitchAlt{
+  0%,100%{transform:translate(2px,-2px);} 25%{transform:translate(3px,-1px);}
+  50%{transform:translate(1px,-3px);}     75%{transform:translate(2px,-2px);}
+}
+.glitch:hover::before { transform:translate(-4px,4px); }
+.glitch:hover::after  { transform:translate( 4px,-4px); }
+
+/* about (terminal‑style box) */
+.terminal-box{
+  background:#2e1a47; border:2px solid #faf1d8; color:#faf1d8;
+  padding:1rem; max-width:45%; margin:0 auto;
+  box-shadow:4px 4px #000; font-size:.75rem;
+  position:relative; transform:translate(55%,60%); text-align:center;
+}
+.terminal-header{ position:absolute; top:-1.2rem; left:1rem; color:#39cccc; font-size:.6rem; }
+.terminal-body p{ margin:1rem 0; line-height:1.8; }
+
+/* ---------- schedule ---------- */
+.section-title{ font-size:3rem; font-weight:700; margin-top:5rem; text-shadow:4px 4px #000; }
+
+.day-tabs button{
+  background:transparent; border:2px solid #39cccc; color:#39cccc;
+  font-size:.7rem; margin:.5rem; padding:.5rem 1rem;
+  box-shadow:2px 2px #000; cursor:pointer;
+}
+.day-tabs .active{ background:#39cccc; color:#2e1a47; }
+
+.schedule-items{ display:flex; flex-direction:column; gap:1rem; margin-top:1rem; }
+.schedule-row{
+  display:flex; align-items:center; background:#faf1d8; color:#2e1a47;
+  box-shadow:4px 4px #000; padding:.8rem; font-size:.8rem;
+}
+.schedule-row.food{ background:#ffdc00; }
+.time   { flex:0 0 200px; font-weight:bold; color:#ff4136; }
+.divider{ flex:0 0 2px; height:100%; margin:0 2rem;
+          background:repeating-linear-gradient(to bottom,#2e1a47,#2e1a47 4px,transparent 4px,transparent 8px);}
+.event  { flex:1; text-align:left; }
+.event .title   { font-weight:bold;         text-align:center; }
+.event .location{ font-size:.7rem; color:#ff4136; margin:.5rem 0; text-align:center; }
+.event .desc    { line-height:1.5;          text-align:center; }
+
+/* ---------- FAQ (keeps your existing FAQ component styles) ---------- */
+.faq details{
+  background:#faf1d8; color:#2e1a47; margin:.8rem 0; padding:.6rem;
+  box-shadow:4px 4px #000; font-size:.7rem; cursor:pointer;
+}
+.faq details summary{ cursor:pointer; line-height:1.1; }
+
+/* ---------- sponsors ---------- */
+.sponsor-grid{
+  display:grid; grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+  gap:40px; justify-items:center; align-items:center; padding:40px 20px;
+}
+.sponsor-link{ transition:transform .3s ease; }
+.sponsor-link:hover{ transform:scale(1.05); }
+.sponsor-image{ max-width:200px; height:auto; }
+
+.infotext{ margin-bottom:20px; line-height:1.6; }
+.infotext a{ color:#39cccc; text-decoration:none; }
+.infotext a:hover{ text-decoration:underline; }
+
+/* ---------- footer ---------- */
+footer{ margin-top:3rem; font-size:.8rem; color:#ffdc00; }
+footer a{ color:#ffdc00; text-decoration:underline; }
+footer a:hover{ text-decoration:none; }
+
+/* ---------- MOBILE ------------ */
+@media (max-width: 768px){
+  html, body      { padding:10px; }
+  .hero           { transform:none; text-align:center; padding-top:2rem; }
+  .hero-title     { font-size:3rem; }
+  .hero-bg-img    { transform:translate(-10%,  0); }
+  .terminal-box   { max-width:90%; transform:none; font-size:.65rem; }
+
+  .section-title  { font-size:2rem; margin-top:3rem; }
+
+  .schedule-row   { flex-direction:column; align-items:flex-start; }
+  .time           { flex:none; margin-bottom:.5rem; }
+  .divider        { display:none; }
+
+  .sponsor-grid   { grid-template-columns:repeat(auto-fit,minmax(120px,1fr)); gap:20px; }
+  .sponsor-image  { max-width:120px; }
+
+  footer          { font-size:.6rem; }
+}
+/* 
+@media (min-width: 500px){
+  .schedule{                  
+    padding-top: 30rem          
+  }} */
+
+@media (min-width: 1200px){
+.hero {
+  transform: translateX(5%);
+}
+}

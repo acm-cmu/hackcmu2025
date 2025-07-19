@@ -15,7 +15,7 @@ function AppMobile() {
           baseColor = "#2D1B4E"
           activeColor="#00FFF7"
           // baseColor = "#1F003F" choice 2
-          // activeColor="#5227e1" choice 2
+          // activeColor="#60577fff" choice 2
           // baseColor = "#1F003F" choice 1
           // activeColor="#faf1d8" choice 1
           proximity={120}

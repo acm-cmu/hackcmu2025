@@ -1,23 +1,286 @@
-// src/App.js
-import React, { useEffect, useState } from "react";
-import DesktopApp from "./AppDesktop"; // your current code, renamed
-import MobileApp from "./AppMobile";
+import React, { useState } from 'react';
+import './App.css';
+
+/* components you already have */
+import DotGrid   from './components/DotGrid';
+import FaqPage   from './components/Faq';
+
+/* sponsor images (WebP preferred) */
+import citadel       from './sponsors/citadel.webp';
+import thetradedesk  from './sponsors/thetradedesk.webp';
+import hrt           from './sponsors/hrt.webp';
+import stripe        from './sponsors/stripe.webp';
+import deshaw        from './sponsors/deshaw.webp';
+import janestreet    from './sponsors/janestreet.webp';
+import lockheed      from './sponsors/lockheed.webp';
+import anthropic     from './sponsors/anthropic.webp';
+import ethereum      from './sponsors/ethereum.webp';
+import sandia        from './sponsors/sandia.webp';
+import scm           from './sponsors/scm.webp';
 
 function App() {
-  const [isMobile, setIsMobile] = useState(false);
+  const [selectedDay, setSelectedDay] = useState('friday');
 
-  useEffect(() => {
-    const checkMobile = () => {
-      setIsMobile(window.innerWidth <= 768); // or use userAgent for more precision
-    };
+  return (
+    <div className="pixel-app">
+      {/* animated dotted background */}
+      <div className="dot-grid-bg">
+        <DotGrid
+          dotSize={5}
+          gap={15}
+          baseColor="#2D1B4E"
+          activeColor="#00FFF7"
+          proximity={120}
+          shockRadius={250}
+          shockStrength={5}
+          resistance={750}
+          returnDuration={1.5}
+        />
+      </div>
 
-    checkMobile(); // initial check
-    window.addEventListener("resize", checkMobile); // update on resize
+      {/* hero section */}
+      <div className="hero-wrapper">
+        <img
+          src={`${process.env.PUBLIC_URL}/assets/designs/gates5.png`}
+          alt="Gates"
+          className="hero-bg-img"
+        />
 
-    return () => window.removeEventListener("resize", checkMobile);
-  }, []);
+        <header className="hero">
+          <h1 className="hero-title glitch" data-text="HACKCMU">
+            HACKCMU
+          </h1>
+          <p className="date">September 12 – 13, 2025</p>
+          <a
+            href="https://forms.gle/Qit8dRRjE8M516dy9"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button className="start-button">Sign Up</button>
+          </a>
 
-  return isMobile ? <MobileApp /> : <DesktopApp />;
+          {/* about box */}
+          <section className="about">
+            <div className="terminal-box">
+              <div className="terminal-header">{'>> ABOUT <<'}</div>
+              <div
+                className="terminal-body glitch-about"
+                data-text="HackCMU is Carnegie Mellon's premier hackathon, a 24‑hour beginner‑friendly challenge where creativity, code, and caffeine collide. Rally your crew and turn bold ideas into reality!"
+              >
+                <p>
+                  HackCMU is Carnegie Mellon's premier hackathon, a 24‑hour
+                  beginner‑friendly challenge where creativity, code, and
+                  caffeine collide. Rally your crew and turn bold ideas into
+                  reality!
+                </p>
+              </div>
+            </div>
+          </section>
+        </header>
+      </div>
+
+      {/* schedule */}
+      <section className="schedule">
+        <h2 className="section-title glitch" data-text="SCHEDULE">
+          SCHEDULE
+        </h2>
+
+        <div className="day-tabs">
+          <button
+            className={selectedDay === 'friday' ? 'active' : ''}
+            onClick={() => setSelectedDay('friday')}
+          >
+            FRIDAY 9/12
+          </button>
+          <button
+            className={selectedDay === 'saturday' ? 'active' : ''}
+            onClick={() => setSelectedDay('saturday')}
+          >
+            SATURDAY 9/13
+          </button>
+        </div>
+
+        <div className="schedule-items">
+          {selectedDay === 'friday' && (
+            <>
+              {/* Friday rows */}
+              <Row
+                time="5:30 – 6:00 PM"
+                title="Check‑in"
+                location="Tepper Simmons Auditorium"
+                desc="Check in with organizers and find team members."
+              />
+              <Row
+                time="6:00 – 6:30 PM"
+                title="Opening Ceremony"
+                location="Tepper Simmons Auditorium"
+                desc="Join us for the opening ceremony of HackCMU 2025!"
+              />
+              <Row
+                time="7:00 – 9:00 PM"
+                title="Dinner & Sponsor Fair"
+                location="Tepper Simmons Auditorium"
+                desc="Meet our amazing event sponsors!"
+                food
+              />
+              <Row
+                time="12:00 – 1:00 AM"
+                title="Midnight Snack"
+                location="Tepper Simmons Auditorium"
+                desc="Fuel up with late‑night snacks!"
+                food
+              />
+            </>
+          )}
+
+          {selectedDay === 'saturday' && (
+            <>
+              {/* Saturday rows */}
+              <Row
+                time="9:00 – 10:00 AM"
+                title="Breakfast"
+                location="Tepper Simmons Auditorium"
+                desc="Grab breakfast after a long night of hacking!"
+                food
+              />
+              <Row
+                time="12:00 – 1:00 PM"
+                title="Lunch"
+                location="Tepper Simmons Auditorium"
+                desc="Grab a bite before submitting your final project."
+                food
+              />
+              <Row
+                time="1:00 PM"
+                title="Project Submission Deadline"
+                location="Submit via Google Forms"
+                desc="Submit your project description and track selection."
+              />
+              <Row
+                time="2:00 – 3:30 PM"
+                title="Judging"
+                location="Tepper Simmons Auditorium"
+                desc="Judges will evaluate your projects — good luck!"
+              />
+              <Row
+                time="3:30 – 4:30 PM"
+                title="Expo"
+                location="Tepper Simmons Auditorium"
+                desc="Show off your project to fellow hackers and attendees."
+              />
+              <Row
+                time="5:00 – 6:00 PM"
+                title="Closing Ceremony"
+                location="Rangos Ballroom (CUC 2F)"
+                desc="We hope you continue to reach for the stars!"
+              />
+            </>
+          )}
+        </div>
+
+        {/* FAQ */}
+        <h2 className="section-title glitch" data-text="FAQ">
+          FAQ
+        </h2>
+        <FaqPage />
+      </section>
+
+      {/* sponsors */}
+      <section className="sponsors">
+        <h2 className="section-title glitch" data-text="SPONSORS">
+          SPONSORS
+        </h2>
+
+        <p className="infotext">
+          Our work here at ACM@CMU would not be possible without the help of our
+          amazing sponsors. We are immeasurably thankful for their support.
+        </p>
+        <p className="infotext">
+          Interested in sponsoring us? Email&nbsp;
+          <a href="mailto:acm-exec@cs.cmu.edu">acm-exec@cs.cmu.edu</a>.
+        </p>
+
+        <div className="sponsor-grid">
+          <Sponsor link="https://www.citadel.com/" img={citadel} alt="Citadel" />
+          <Sponsor
+            link="https://www.thetradedesk.com/"
+            img={thetradedesk}
+            alt="The Trade Desk"
+          />
+          <Sponsor
+            link="https://www.hudsonrivertrading.com/"
+            img={hrt}
+            alt="Hudson River Trading"
+          />
+          <Sponsor link="https://stripe.com/" img={stripe} alt="Stripe" />
+          <Sponsor link="https://www.deshaw.com/" img={deshaw} alt="D. E. Shaw" />
+          <Sponsor link="https://www.janestreet.com/" img={janestreet} alt="Jane Street" />
+          <Sponsor
+            link="https://www.lockheedmartin.com/"
+            img={lockheed}
+            alt="Lockheed Martin"
+          />
+          <Sponsor
+            link="https://www.anthropic.com/"
+            img={anthropic}
+            alt="Anthropic"
+          />
+          <Sponsor
+            link="https://ethereum.foundation/"
+            img={ethereum}
+            alt="Ethereum Foundation"
+          />
+          <Sponsor link="https://www.sandia.gov/" img={sandia} alt="Sandia Labs" />
+          <Sponsor
+            link="https://www.scm-lp.com/"
+            img={scm}
+            alt="Steven's Capital Mgmt"
+          />
+        </div>
+      </section>
+
+      <footer>
+        PRESENTED BY{' '}
+        <a
+          href="https://www.acmatcmu.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          ACM@CMU
+        </a>
+      </footer>
+    </div>
+  );
+}
+
+/* ----- small helper sub‑components ----- */
+
+function Row({ time, title, location, desc, food }) {
+  const rowClass = food ? 'schedule-row food' : 'schedule-row';
+  return (
+    <div className={rowClass}>
+      <div className="time">{time}</div>
+      <div className="divider" />
+      <div className="event">
+        <div className="title">{title}</div>
+        <div className="location">{location}</div>
+        <div className="desc">{desc}</div>
+      </div>
+    </div>
+  );
+}
+
+function Sponsor({ link, img, alt }) {
+  return (
+    <a
+      className="sponsor-link"
+      href={link}
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <img src={img} alt={alt} className="sponsor-image" />
+    </a>
+  );
 }
 
 export default App;
