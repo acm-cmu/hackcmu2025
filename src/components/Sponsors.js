@@ -121,26 +121,107 @@ export default function Sponsors() {
           Interested in sponsoring us? Email us at <a href="mailto:acm-exec@cs.cmu.edu">acm-exec@cs.cmu.edu</a>.
         </div>
 
-        {/* Single unified white box containing all sponsor logos */}
-        <div className="white-bg" id="logo-grid">
-          {sponsors.map((sponsor, index) => (
-            <div
-              className="sponsor-link"
-              key={index}
-              onClick={() => setSelectedSponsor(sponsor)}
-            >
-              <img
-                src={sponsor.imagePage}
-                alt={sponsor.name}
-                loading="lazy"
-              />
-            </div>
-          ))}
-        </div>
+       <div className="white-bg" id="logo-grid">
+  <div className="sponsor-link" onClick={() => setSelectedSponsor({
+    name: "Citadel",
+    imagePopup: `${process.env.PUBLIC_URL}/assets/sponsors/citadel.webp`,
+    description: "A leading global financial institution.",
+    link: "https://www.citadel.com",
+  })}>
+    <img src={`${process.env.PUBLIC_URL}/assets/sponsors/citadel.webp`} alt="Citadel" loading="lazy" />
+  </div>
 
-        {selectedSponsor && (
-          <Popup sponsor={selectedSponsor} onClose={() => setSelectedSponsor(null)} />
-        )}
+  <div className="sponsor-link" onClick={() => setSelectedSponsor({
+    name: "The Trade Desk",
+    imagePopup: `${process.env.PUBLIC_URL}/assets/sponsors/thetradedesk.webp`,
+    description: "World-class digital advertising platform.",
+    link: "https://www.thetradedesk.com/us",
+  })}>
+    <img src={`${process.env.PUBLIC_URL}/assets/sponsors/thetradedesk.webp`} alt="The Trade Desk" loading="lazy" />
+  </div>
+
+  <div className="sponsor-link" onClick={() => setSelectedSponsor({
+    name: "HRT",
+    imagePopup: `${process.env.PUBLIC_URL}/assets/sponsors/hrt.webp`,
+    description: "Hudson River Trading, quantitative trading firm.",
+    link: "https://www.hudsonrivertrading.com/",
+  })}>
+    <img src={`${process.env.PUBLIC_URL}/assets/sponsors/hrt.webp`} alt="HRT" loading="lazy" />
+  </div>
+
+  <div className="sponsor-link" onClick={() => setSelectedSponsor({
+    name: "Stripe",
+    imagePopup: `${process.env.PUBLIC_URL}/assets/sponsors/stripe.webp`,
+    description: "Online payment processing for internet businesses.",
+    link: "https://stripe.com",
+  })}>
+    <img src={`${process.env.PUBLIC_URL}/assets/sponsors/stripe.webp`} alt="Stripe" loading="lazy" />
+  </div>
+
+  <div className="sponsor-link" onClick={() => setSelectedSponsor({
+    name: "D. E. Shaw",
+    imagePopup: `${process.env.PUBLIC_URL}/assets/sponsors/deshaw.webp`,
+    description: "A global investment and technology development firm.",
+    link: "https://www.deshaw.com",
+  })}>
+    <img src={`${process.env.PUBLIC_URL}/assets/sponsors/deshaw.webp`} alt="D. E. Shaw" loading="lazy" />
+  </div>
+
+  <div className="sponsor-link" onClick={() => setSelectedSponsor({
+    name: "Jane Street",
+    imagePopup: `${process.env.PUBLIC_URL}/assets/sponsors/janestreet.webp`,
+    description: "Global trading firm.",
+    link: "https://www.janestreet.com",
+  })}>
+    <img src={`${process.env.PUBLIC_URL}/assets/sponsors/janestreet.webp`} alt="Jane Street" loading="lazy" />
+  </div>
+
+  <div className="sponsor-link" onClick={() => setSelectedSponsor({
+    name: "Lockheed Martin",
+    imagePopup: `${process.env.PUBLIC_URL}/assets/sponsors/lockheed.webp`,
+    description: "Aerospace and defense company.",
+    link: "https://www.lockheedmartin.com",
+  })}>
+    <img src={`${process.env.PUBLIC_URL}/assets/sponsors/lockheed.webp`} alt="Lockheed Martin" loading="lazy" />
+  </div>
+
+  <div className="sponsor-link" onClick={() => setSelectedSponsor({
+    name: "Anthropic",
+    imagePopup: `${process.env.PUBLIC_URL}/assets/sponsors/anthropic.webp`,
+    description: "AI safety and research company.",
+    link: "https://www.anthropic.com",
+  })}>
+    <img src={`${process.env.PUBLIC_URL}/assets/sponsors/anthropic.webp`} alt="Anthropic" loading="lazy" />
+  </div>
+
+  <div className="sponsor-link" onClick={() => setSelectedSponsor({
+    name: "Ethereum",
+    imagePopup: `${process.env.PUBLIC_URL}/assets/sponsors/ethereum.webp`,
+    description: "Open-source blockchain with smart contract functionality.",
+    link: "https://ethereum.org",
+  })}>
+    <img src={`${process.env.PUBLIC_URL}/assets/sponsors/ethereum.webp`} alt="Ethereum" loading="lazy" />
+  </div>
+
+  <div className="sponsor-link" onClick={() => setSelectedSponsor({
+    name: "Sandia",
+    imagePopup: `${process.env.PUBLIC_URL}/assets/sponsors/sandia.webp`,
+    description: "National security laboratory.",
+    link: "https://www.sandia.gov",
+  })}>
+    <img src={`${process.env.PUBLIC_URL}/assets/sponsors/sandia.webp`} alt="Sandia" loading="lazy" />
+  </div>
+
+  <div className="sponsor-link" onClick={() => setSelectedSponsor({
+    name: "SCM",
+    imagePopup: `${process.env.PUBLIC_URL}/assets/sponsors/scm.webp`,
+    description: "Systematic Capital Management.",
+    link: "https://www.scm-lp.com/",
+  })}>
+    <img src={`${process.env.PUBLIC_URL}/assets/sponsors/scm.webp`} alt="SCM" loading="lazy" />
+  </div>
+</div>
+
       </div>
     </div>
   );
