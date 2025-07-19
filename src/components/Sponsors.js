@@ -89,8 +89,8 @@ export default function Sponsors() {
     },
     {
       name: "Ethereum",
-      imagePage: `${process.env.PUBLIC_URL}/assets/sponsors/ethereum.webp`,
-      imagePopup: `${process.env.PUBLIC_URL}/assets/sponsors/ethereum.webp`,
+      imagePage: `${process.env.PUBLIC_URL}/assets/sponsors/ethereum.png`,
+      imagePopup: `${process.env.PUBLIC_URL}/assets/sponsors/ethereum.png`,
       description: "Open-source blockchain with smart contract functionality.",
       link: "https://ethereum.org",
     },
