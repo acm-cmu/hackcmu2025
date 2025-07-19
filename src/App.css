@@ -171,11 +171,42 @@ footer a:hover{ text-decoration:none; }
 
   footer          { font-size:.6rem; }
 }
-/* 
+
 @media (min-width: 500px){
   .schedule{                  
-    padding-top: 30rem          
-  }} */
+    margin-top: 10vw;   
+  }}
+
+@media (min-width: 525px){
+  .schedule{                  
+    margin-top: 15vw;   
+  }}
+
+  @media (min-width: 550px){
+  .schedule{                  
+    margin-top: 20vw;   
+  }}
+
+    @media (min-width: 575px){
+  .schedule{                  
+    margin-top: 25vw;   
+  }}
+
+@media (min-width: 600px){
+  .schedule{                  
+    margin-top: 30vw;   
+  }}
+
+@media (min-width: 625px){
+  .schedule{                  
+    margin-top: 35vw;   
+  }}
+
+@media (min-width: 650px){
+  .schedule{                  
+    margin-top: 40vw;   
+  }}
+
 
 @media (min-width: 768px){
 .hero {
@@ -186,7 +217,43 @@ footer a:hover{ text-decoration:none; }
      margin-top: 10rem;
      max-width: 35%;
 }
+
+.schedule{                  
+    margin-top: 0vw;   
+  }
 }
+
+
+@media (min-width: 840px){
+.schedule{                  
+    margin-top: 10vw;   
+  }
+}
+
+@media (min-width: 880px){
+.schedule{                  
+    margin-top: 15vw;   
+  }
+}
+
+@media (min-width: 940px){
+.schedule{                  
+    margin-top: 20vw;   
+  }
+}
+
+@media (min-width: 980px){
+.schedule{                  
+    margin-top: 25vw;   
+  }
+}
+
+@media (min-width: 1040px){
+.schedule{                  
+    margin-top: 30vw;   
+  }
+}
+
 
 @media (min-width: 768px) and (max-width: 1120px) {
   .hero {
