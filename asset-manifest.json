@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/hackcmu2025/static/css/main.10d192d2.css",
-    "main.js": "/hackcmu2025/static/js/main.20d135ef.js",
+    "main.css": "/hackcmu2025/static/css/main.276b7a86.css",
+    "main.js": "/hackcmu2025/static/js/main.ec60755b.js",
     "static/js/453.96453769.chunk.js": "/hackcmu2025/static/js/453.96453769.chunk.js",
     "static/media/lockheed.webp": "/hackcmu2025/static/media/lockheed.bc9d2f58ab08ccb68f1b.webp",
     "static/media/thetradedesk.webp": "/hackcmu2025/static/media/thetradedesk.460f062c6536e30ebb51.webp",
@@ -15,12 +15,12 @@
     "static/media/deshaw.webp": "/hackcmu2025/static/media/deshaw.0bf2a5548c26f50e2efc.webp",
     "static/media/anthropic.webp": "/hackcmu2025/static/media/anthropic.4ac9c0f14300495dd0e5.webp",
     "index.html": "/hackcmu2025/index.html",
-    "main.10d192d2.css.map": "/hackcmu2025/static/css/main.10d192d2.css.map",
-    "main.20d135ef.js.map": "/hackcmu2025/static/js/main.20d135ef.js.map",
+    "main.276b7a86.css.map": "/hackcmu2025/static/css/main.276b7a86.css.map",
+    "main.ec60755b.js.map": "/hackcmu2025/static/js/main.ec60755b.js.map",
     "453.96453769.chunk.js.map": "/hackcmu2025/static/js/453.96453769.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.10d192d2.css",
-    "static/js/main.20d135ef.js"
+    "static/css/main.276b7a86.css",
+    "static/js/main.ec60755b.js"
   ]
 }
