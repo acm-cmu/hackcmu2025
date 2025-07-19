@@ -2,9 +2,17 @@ import React, { useState } from 'react';
 import './App.css';
 import DotGrid from './components/DotGrid';
 import FaqPage from './components/Faq';
+import Sponsors from './components/Sponsors';
 
 function App() {
   const [selectedDay, setSelectedDay] = useState('friday');
+  const sponsors = [
+        { name: 'Anthropic', logo: '/assets/sponsors/anthropic.png' },
+        { name: 'Hudson River Trading', logo: '/assets/sponsors/hrt.png' },
+        { name: 'Jane Street', logo: '/assets/sponsors/janestreet.png' },
+        { name: 'The Trade Desk', logo: '/assets/sponsors/tradedesk.png' },
+        { name: 'Steven\'s Capital', logo: '/assets/sponsors/scm.png' }
+      ];
 
   return (
     <div className="pixel-app">
@@ -184,18 +192,7 @@ function App() {
       <FaqPage/>
       
       </section>
-      <section className="sponsors">
-        <h1 style={{ fontSize: "3rem", fontWeight: "bold" }}>
-          <span data-text="SPONSORS">SPONSORS</span>
-        </h1>
-        <div className="sponsor-grid">
-          <div className="sponsor">Anthropic</div>
-          <div className="sponsor">Hudson River Trading</div>
-          <div className="sponsor">Jane Street</div>
-          <div className="sponsor">The Trade Desk</div>
-          <div className="sponsor">Steven's Capital Management</div>
-        </div>
-      </section>
+      <Sponsors sponsors={sponsors} />
 
       <footer>
         PRESENTED BY ACM@CMU
