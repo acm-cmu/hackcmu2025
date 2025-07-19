@@ -2,9 +2,6 @@ import React, { useState } from 'react';
 import './App.css';
 import DotGrid from './components/DotGrid';
 import FaqPage from './components/Faq';
-import MetricsRotator from './components/MetricsRotator'; 
-import CardSwap, { Card } from './components/CardSwap'
-
 
 function App() {
   const [selectedDay, setSelectedDay] = useState('friday');
@@ -44,30 +41,26 @@ function App() {
           <button className="start-button">Sign Up</button>
         </a>
         
-        
-        {/* <p className="subtext">Sign up as a hacker or mentor</p> */}
-      </div>
-    </div>
-    {/* blank space lol */}
-    <h1 style={{ fontSize: "60rem" }}>
-          <span data-text=""></span>
-        </h1> 
-
-      <section className="about">
+        <section className="about">
         <div className="terminal-box">
           <div className="terminal-header">{">> ABOUT <<"}</div>
           <div 
             className="terminal-body glitch-about"
-            data-text="HackCMU is Carnegie Mellon's premier hackathon, a 24-hour coding adventure where your wildest tech ideas come alive. Grab your team, power up your pixel dreams, and build something epic."
+            data-text="HackCMU is Carnegie Mellon's premier hackathon, a 24-hour beginner-friendly challenge where creativity, code, and caffeine collide. Rally your crew and turn bold ideas into reality!"
           >
             <p>
-              HackCMU is Carnegie Mellon's premier hackathon, 
-              a 24-hour coding adventure where your wildest tech ideas come alive. 
-              Grab your team, power up your pixel dreams, and build something epic.
+              HackCMU is Carnegie Mellon's premier hackathon, a 24-hour beginner-friendly challenge where creativity, code, and caffeine collide. Rally your crew and turn bold ideas into reality!
             </p>
           </div>
         </div>
       </section>
+        {/* <p className="subtext">Sign up as a hacker or mentor</p> */}
+      </div>
+    </div>
+    {/* blank space lol */}
+    <h1 style={{ fontSize: "40rem" }}>
+          <span data-text=""></span>
+        </h1> 
 
       <section className="schedule">
         <h2>SCHEDULE</h2>
