@@ -4,6 +4,7 @@ import DotGrid from './components/DotGrid';
 import FaqPage from './components/Faq';
 import Sponsors from './components/Sponsors';
 import "./components/Sponsors.css";
+import Citadel from "./sponsors/citadel.webp"
 
 function App() {
   const [selectedDay, setSelectedDay] = useState('friday');
@@ -190,7 +191,11 @@ function App() {
       <h1 style={{ fontSize: "3rem", fontWeight: "bold"  }}>
           <span className="glitch" data-text="SPONSORS">SPONSORS</span>
         </h1>
-      <Sponsors />
+      {/* <Sponsors /> */}
+      <img
+        src={Citadel}
+        alt="Citadel"
+      />
 
       <footer>
         PRESENTED BY <a href="https://www.acmatcmu.com/" target="_blank" rel="noopener noreferrer">ACM@CMU</a>
