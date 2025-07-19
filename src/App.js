@@ -3,6 +3,7 @@ import './App.css';
 import DotGrid from './components/DotGrid';
 import FaqPage from './components/Faq';
 import Sponsors from './components/Sponsors';
+import "./components/Sponsors.css";
 
 function App() {
   const [selectedDay, setSelectedDay] = useState('friday');
@@ -189,7 +190,24 @@ function App() {
       <h1 style={{ fontSize: "3rem", fontWeight: "bold"  }}>
           <span className="glitch" data-text="SPONSORS">SPONSORS</span>
         </h1>
-      <Sponsors />
+      {/* <Sponsors /> */}
+      <div id="sponsors">
+      <div className="container">
+        <div className="infotext">
+          Our work here at ACM@CMU would not be possible without the help of our amazing sponsors.
+          We are immeasurably thankful for their support.
+        </div>
+        <div className="infotext">
+          Interested in sponsoring us? Email us at <a href="mailto:acm-exec@cs.cmu.edu">acm-exec@cs.cmu.edu</a>.
+        </div>
+        <div className="white-bg" id="logo-grid">
+        <img src={`${process.env.PUBLIC_URL}/assets/sponsors/citadel.webp`} alt="Gates" className="sponsor-link"/>
+        <img src={`${process.env.PUBLIC_URL}/assets/sponsors/thetradedesk.webp`} alt="Gates" className="sponsor-link"/>
+      </div>
+      </div>
+      </div>
+      
+      
 
       <footer>
         PRESENTED BY <a href="https://www.acmatcmu.com/" target="_blank" rel="noopener noreferrer">ACM@CMU</a>
