@@ -1,9 +1,10 @@
 {
   "files": {
     "main.css": "/hackcmu2025/static/css/main.92a3ee64.css",
-    "main.js": "/hackcmu2025/static/js/main.f49f7c3e.js",
+    "main.js": "/hackcmu2025/static/js/main.f83e6973.js",
     "static/js/453.96453769.chunk.js": "/hackcmu2025/static/js/453.96453769.chunk.js",
     "static/media/lockheed.webp": "/hackcmu2025/static/media/lockheed.bc9d2f58ab08ccb68f1b.webp",
+    "static/media/scm.webp": "/hackcmu2025/static/media/scm.c1c714a756e9f563d357.webp",
     "static/media/thetradedesk.webp": "/hackcmu2025/static/media/thetradedesk.460f062c6536e30ebb51.webp",
     "static/media/ethereum.webp": "/hackcmu2025/static/media/ethereum.1d1be85902a4c51c6d9f.webp",
     "static/media/stripe.webp": "/hackcmu2025/static/media/stripe.dc2f6c98c3f910ef68b4.webp",
@@ -11,16 +12,15 @@
     "static/media/hrt.webp": "/hackcmu2025/static/media/hrt.4337cc63f03f16c2c582.webp",
     "static/media/janestreet.webp": "/hackcmu2025/static/media/janestreet.12ba0baf697e0a753ff9.webp",
     "static/media/citadel.webp": "/hackcmu2025/static/media/citadel.abff60568bd6819a80ab.webp",
-    "static/media/scm.webp": "/hackcmu2025/static/media/scm.401c9f36d82a163f5699.webp",
     "static/media/deshaw.webp": "/hackcmu2025/static/media/deshaw.0bf2a5548c26f50e2efc.webp",
     "static/media/anthropic.webp": "/hackcmu2025/static/media/anthropic.4ac9c0f14300495dd0e5.webp",
     "index.html": "/hackcmu2025/index.html",
     "main.92a3ee64.css.map": "/hackcmu2025/static/css/main.92a3ee64.css.map",
-    "main.f49f7c3e.js.map": "/hackcmu2025/static/js/main.f49f7c3e.js.map",
+    "main.f83e6973.js.map": "/hackcmu2025/static/js/main.f83e6973.js.map",
     "453.96453769.chunk.js.map": "/hackcmu2025/static/js/453.96453769.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.92a3ee64.css",
-    "static/js/main.f49f7c3e.js"
+    "static/js/main.f83e6973.js"
   ]
 }
