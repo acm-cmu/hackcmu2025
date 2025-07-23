@@ -233,7 +233,7 @@ function App() {
   <a href="https://www.sandia.gov/" target="_blank" rel="noopener noreferrer">
     <img src={sandia} alt="Sandia National Laboratories" className="sponsor-image" />
   </a>
-  <a href="https://www.scm-lp.com/" target="_blank" rel="noopener noreferrer">
+  <a className="sponsor-link" href="https://www.scm-lp.com/" target="_blank" rel="noopener noreferrer">
     <img src={scm} alt="Steven's Capital Management" className="sponsor-image" />
   </a>
 </div>
