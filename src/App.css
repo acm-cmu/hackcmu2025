@@ -140,7 +140,7 @@ body::after {
   display:grid; grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
   gap:40px; justify-items:center; align-items:center; padding:40px 20px;
 }
-.sponsor-link{ transition:transform .3s ease; }
+.sponsor-link{ transition:transform .3s ease; display: inline-block;}
 .sponsor-link:hover{ transform:scale(1.05); }
 .sponsor-image{ max-width:200px; height:auto; }
 
