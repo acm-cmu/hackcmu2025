@@ -70,6 +70,7 @@
     #363a65,
     #363a65
   );
+  transform: scaleY(1.15);
   font-size: 12px;
   background-clip: text;
   font-weight: bold;

@@ -65,11 +65,11 @@ function App() {
               <div className="terminal-header">{'>> ABOUT <<'}</div>
               <div
                 className="terminal-body glitch-about"
-                data-text="HackCMU is Carnegie Mellon's premier hackathon, a 24‑hour beginner‑friendly challenge where creativity, code, and caffeine collide. Rally your crew and turn bold ideas into reality!"
+                data-text="HackCMU is Carnegie Mellon's premier hackathon, a 24-hour beginner-friendly challenge where creativity, code, and caffeine collide. Rally your crew and turn bold ideas into reality!"
               >
                 <p>
-                  HackCMU is Carnegie Mellon's premier hackathon, a 24‑hour
-                  beginner‑friendly challenge where creativity, code, and
+                  HackCMU is Carnegie Mellon's premier hackathon, a 24-hour
+                  beginner-friendly challenge where creativity, code, and
                   caffeine collide. Rally your crew and turn bold ideas into
                   reality!
                 </p>

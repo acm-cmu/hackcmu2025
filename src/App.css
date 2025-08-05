@@ -101,7 +101,7 @@ body::after {
   position:relative;  text-align:center;
 }
 .terminal-header{ position:absolute; top:-1.2rem; left:1rem; color:#39cccc; font-size:.6rem; }
-.terminal-body p{ margin:1rem 0; line-height:1.8; }
+.terminal-body p{ margin:1rem 0; line-height:1.8; transform: scaleY(1.15);}
 
 /* ---------- schedule ---------- */
 .section-title{ font-size:3rem; font-weight:700; margin-top:5rem; text-shadow:4px 4px #000; }
@@ -124,9 +124,9 @@ body::after {
 .divider{ flex:0 0 2px; height:100%; margin:0 2rem;
           background:repeating-linear-gradient(to bottom,#2e1a47,#2e1a47 4px,transparent 4px,transparent 8px);}
 .event  { flex:1; text-align:left; }
-.event .title   { font-weight:bold;         text-align:center; }
-.event .location{ font-size:.7rem; color:#ff4136; margin:.5rem 0; text-align:center; }
-.event .desc    { line-height:1.5;          text-align:center; }
+.event .title   { font-weight:bold;         text-align:center; transform: scaleY(1.15);}
+.event .location{ font-size:.7rem; color:#ff4136; margin:.5rem 0; text-align:center; transform: scaleY(1.15);}
+.event .desc    { line-height:1.5;          text-align:center; transform: scaleY(1.15);}
 
 /* ---------- FAQ (keeps your existing FAQ component styles) ---------- */
 .faq details{
