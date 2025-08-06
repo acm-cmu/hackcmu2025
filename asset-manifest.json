@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/hackcmu2025/static/css/main.f9596b1c.css",
-    "main.js": "/hackcmu2025/static/js/main.c3da9104.js",
+    "main.js": "/hackcmu2025/static/js/main.205244ee.js",
     "static/js/453.96453769.chunk.js": "/hackcmu2025/static/js/453.96453769.chunk.js",
     "static/media/lockheed.webp": "/hackcmu2025/static/media/lockheed.bc9d2f58ab08ccb68f1b.webp",
     "static/media/scm.webp": "/hackcmu2025/static/media/scm.c1c714a756e9f563d357.webp",
@@ -12,15 +12,16 @@
     "static/media/hrt.webp": "/hackcmu2025/static/media/hrt.4337cc63f03f16c2c582.webp",
     "static/media/janestreet.webp": "/hackcmu2025/static/media/janestreet.12ba0baf697e0a753ff9.webp",
     "static/media/citadel.webp": "/hackcmu2025/static/media/citadel.abff60568bd6819a80ab.webp",
+    "static/media/jump.webp": "/hackcmu2025/static/media/jump.a34ce4f48d2cafd25709.webp",
     "static/media/deshaw.webp": "/hackcmu2025/static/media/deshaw.0bf2a5548c26f50e2efc.webp",
     "static/media/anthropic.webp": "/hackcmu2025/static/media/anthropic.4ac9c0f14300495dd0e5.webp",
     "index.html": "/hackcmu2025/index.html",
     "main.f9596b1c.css.map": "/hackcmu2025/static/css/main.f9596b1c.css.map",
-    "main.c3da9104.js.map": "/hackcmu2025/static/js/main.c3da9104.js.map",
+    "main.205244ee.js.map": "/hackcmu2025/static/js/main.205244ee.js.map",
     "453.96453769.chunk.js.map": "/hackcmu2025/static/js/453.96453769.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f9596b1c.css",
-    "static/js/main.c3da9104.js"
+    "static/js/main.205244ee.js"
   ]
 }
