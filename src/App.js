@@ -185,6 +185,44 @@ function App() {
         <FaqPage />
       </section>
 
+      {/* Resources */}
+<section className="resources">
+  <h2 className="section-title glitch" data-text="RESOURCES">
+    RESOURCES
+  </h2>
+
+  <p className="infotext">
+    Looking for help or extra support? Use the links below to access credits, mentoring, and helpful resources throughout the event.
+  </p>
+
+  <div className="resource-grid">
+    <ResourceCard
+      title="Credits"
+      desc="Fill out this form to receive $25 in Claude credits, sponsored by Anthropic."
+      // link="https://example.com/claude-credits-form"
+      buttonText={
+    <>
+      Claim<br />
+      Credits
+    </>
+  }
+    />
+    <ResourceCard
+      title="Mentorship"
+      desc="Need technical help or guidance? Submit this form and a mentor will reach out!"
+      // link="https://example.com/mentor-request-form"
+      buttonText="Request Mentor"
+    />
+    <ResourceCard
+      title="Resources"
+      desc="Check out starter guides, documentation, and helpful resources to kickstart your project!"
+      // link="https://example.com/hack-resources"
+      buttonText="View Resources"
+    />
+  </div>
+</section>
+
+
       {/* sponsors */}
       <section className="sponsors">
         <h2 className="section-title glitch" data-text="SPONSORS">
@@ -284,3 +322,20 @@ function Sponsor({ link, img, alt }) {
 
 export default App;
 
+
+function ResourceCard({ title, desc, link, buttonText }) {
+  return (
+    <div className="resource-card">
+      <h3>{title}</h3>
+      <p>{desc}</p>
+      <a
+        href={link}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="resource-button"
+      >
+        {buttonText}
+      </a>
+    </div>
+  );
+}
