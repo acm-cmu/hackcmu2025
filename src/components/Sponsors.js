@@ -13,6 +13,7 @@ import anthropic from "../sponsors/anthropic.webp";
 import ethereum from "../sponsors/ethereum.webp";
 import sandia from "../sponsors/sandia.webp";
 import scm from "../sponsors/scm.webp";
+import jump from "../sponsors/jump.webp";
 
 // Optional popup
 function Popup({ sponsor, onClose }) {
@@ -106,8 +107,14 @@ export default function Sponsors() {
     {
       name: "SCM",
       image: scm,
-      description: "Systematic Capital Management.",
+      description: "Steven's Capital Management.",
       link: "https://www.scm-lp.com/",
+    },
+    {
+      name: "Jump Trading",
+      image: jump,
+      description: "Jump Trading",
+      link: "https://www.jumptrading.com/",
     },
   ];
 
