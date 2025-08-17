@@ -18,6 +18,8 @@ import ethereum      from './sponsors/ethereum.webp';
 import sandia        from './sponsors/sandia.webp';
 import scm           from './sponsors/scm.webp';
 import jump          from './sponsors/jump.webp';
+import yc           from './sponsors/YC.webp';
+import bloomberg          from './sponsors/bloomberg.webp';
 
 function App() {
   const [selectedDay, setSelectedDay] = useState('friday');
@@ -277,6 +279,12 @@ function App() {
   </a>
   <a href="https://www.jumptrading.com/" target="_blank" rel="noopener noreferrer">
     <img src={jump} alt="Jump Trading" className="sponsor-image" />
+  </a>
+  <a href="https://www.bloomberg.com/" target="_blank" rel="noopener noreferrer">
+    <img src={bloomberg} alt="JBloomberg" className="sponsor-image" />
+  </a>
+  <a href="https://www.ycombinator.com/" target="_blank" rel="noopener noreferrer">
+    <img src={yc} alt="Jump Trading" className="sponsor-image" />
   </a>
 </div>
 
