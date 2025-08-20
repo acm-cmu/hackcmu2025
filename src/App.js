@@ -140,13 +140,13 @@ function App() {
           {selectedDay === 'saturday' && (
             <>
               {/* Saturday rows */}
-              <Row
+              {/* <Row
                 time="9:00 – 10:00 AM"
                 title="Breakfast"
                 location="Tepper Simmons Auditorium"
                 desc="Grab breakfast after a long night of hacking!"
                 food
-              />
+              /> */}
               <Row
                 time="12:00 – 1:00 PM"
                 title="Lunch"
@@ -155,27 +155,27 @@ function App() {
                 food
               />
               <Row
-                time="1:00 PM"
+                time="4:00 PM"
                 title="Project Submission Deadline"
                 location="Submit via Google Forms"
                 desc="Submit your project description and track selection."
               />
               <Row
-                time="2:00 – 3:30 PM"
-                title="Judging"
+                time="4:00 – 6:00 PM"
+                title="Judging & Expo"
                 location="Tepper Simmons Auditorium"
-                desc="Judges will evaluate your projects — good luck!"
+                desc="Show off your project to judges, other hackers, and our sponsors!"
               />
               <Row
-                time="3:30 – 4:30 PM"
-                title="Expo"
+                time="6:00 – 7:00 PM"
+                title="Dinner"
                 location="Tepper Simmons Auditorium"
-                desc="Show off your project to fellow hackers and attendees."
+                desc="Relax and enjoy dinner with fellow hackers."
               />
               <Row
-                time="5:00 – 6:00 PM"
-                title="Closing Ceremony"
-                location="Rangos Ballroom (CUC 2F)"
+                time="7:00 – 8:00 PM"
+                title="Closing Ceremony"
+                location="Tepper Simmons Auditorium"
                 desc="We hope you continue to reach for the stars!"
               />
             </>
