@@ -202,8 +202,9 @@ function App() {
   <div className="resource-grid">
     <ResourceCard
       title="Credits"
-      desc="Fill out this form by September 9th to receive $25 in Claude API credits, sponsored by Anthropic."
-      link="https://bit.ly/get-api-credits"
+      desc="Registered participants will be able to claim $25 in Claude API credits, sponsored by Anthropic."
+      // desc="Fill out this form by September 9th to receive $25 in Claude API credits, sponsored by Anthropic."
+      // link="https://bit.ly/get-api-credits"
       buttonText={
     <>
       Claim<br />
