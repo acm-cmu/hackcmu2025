@@ -190,43 +190,40 @@ function App() {
       </section>
 
       {/* Resources */}
+
 <section className="resources">
   <h2 className="section-title glitch" data-text="RESOURCES">
     RESOURCES
   </h2>
-
   <p className="infotext">
     Looking for help or extra support? Use the links below to access credits, mentoring, and helpful resources throughout the event.
   </p>
+
 
   <div className="resource-grid">
     <ResourceCard
       title="Credits"
       desc="We will send out a form to registered participants to claim $25 in Claude API credits, sponsored by Anthropic."
-      // desc="Fill out this form by September 9th to receive $25 in Claude API credits, sponsored by Anthropic."
       // link="https://bit.ly/get-api-credits"
-      buttonText={
-    <>
-      Claim<br />
-      Credits
-    </>
-  }
+      buttonText="Details coming soon"
     />
+
     <ResourceCard
-      title="Mentorship"
-      desc="Need technical help or guidance? Submit this form and a mentor will reach out!"
-      // link="https://example.com/mentor-request-form"
+      title="Mentors"
+      desc="Need help with your project? Request a mentor and get paired with an expert."
+      // link="https://example.com/request-mentor"
       buttonText="Request Mentor"
     />
-    <ResourceCard
-  title="Y Combinator x ACM@CMU"
-  desc="Diana Hu, a YC Partner, will be coming to campus for an exclusive off-the-record talk and office hours, and she'll also be attending HackCMU."
-  link="https://events.ycombinator.com/yc-cmu25"
-  buttonText="Register for YC Event"
-/>
 
+    <ResourceCard
+      title="Y Combinator x ACM@CMU"
+      desc="Diana Hu, a YC Partner, will be on campus for an off-the-record talk and office hours—and she’ll attend HackCMU."
+      link="https://events.ycombinator.com/yc-cmu25"
+      buttonText="Register for YC Event"
+    />
   </div>
 </section>
+
 
 
       {/* sponsors */}
