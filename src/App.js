@@ -202,7 +202,7 @@ function App() {
   <div className="resource-grid">
     <ResourceCard
       title="Credits"
-      desc="Registered participants will be able to claim $25 in Claude API credits, sponsored by Anthropic."
+      desc="We will send out a form to registered participants to claim $25 in Claude API credits, sponsored by Anthropic."
       // desc="Fill out this form by September 9th to receive $25 in Claude API credits, sponsored by Anthropic."
       // link="https://bit.ly/get-api-credits"
       buttonText={
@@ -219,11 +219,12 @@ function App() {
       buttonText="Request Mentor"
     />
     <ResourceCard
-      title="Resources"
-      desc="Check out starter guides, documentation, and helpful resources to kickstart your project!"
-      // link="https://example.com/hack-resources"
-      buttonText="View Resources"
-    />
+  title="Y Combinator x ACM@CMU"
+  desc="Diana Hu, a YC Partner, will be coming to campus for an exclusive off-the-record talk and office hours, and she'll also be attending HackCMU."
+  link="https://events.ycombinator.com/yc-cmu25"
+  buttonText="Register for YC Event"
+/>
+
   </div>
 </section>
 
