@@ -204,8 +204,7 @@ function App() {
     <ResourceCard
       title="Credits"
       desc="We will send out a form to registered participants to claim $25 in Claude API credits, sponsored by Anthropic."
-      // link="https://bit.ly/get-api-credits"
-      buttonText="Details coming soon"
+      hasButton={false}
     />
 
     <ResourceCard
@@ -217,7 +216,7 @@ function App() {
 
     <ResourceCard
       title="Y Combinator x ACM@CMU"
-      desc="Diana Hu, a YC Partner, will be on campus for an off-the-record talk and office hours—and she’ll attend HackCMU."
+      desc="Diana Hu, a YC Partner, will be on campus for an off-the-record talk and office hours."
       link="https://events.ycombinator.com/yc-cmu25"
       buttonText="Register for YC Event"
     />
@@ -301,6 +300,9 @@ function App() {
         >
           ACM@CMU
         </a>
+        <div style={{ fontSize: '0.75rem', marginTop: '0.25rem', color: '#666' }}>
+          HackCMU acknowledges the use of AI tools to assist in event organization and materials.
+        </div>
       </footer>
     </div>
   );
@@ -339,19 +341,23 @@ function Sponsor({ link, img, alt }) {
 export default App;
 
 
-function ResourceCard({ title, desc, link, buttonText }) {
+function ResourceCard({ title, desc, link, buttonText, hasButton = true }) {
   return (
     <div className="resource-card">
       <h3>{title}</h3>
       <p>{desc}</p>
-      <a
-        href={link}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="resource-button"
-      >
-        {buttonText}
-      </a>
+      {hasButton && (
+        <a
+          href={link}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="resource-button"
+          style={{ lineHeight: "1.2" }} 
+        >
+          {buttonText}
+        </a>
+      )}
     </div>
   );
 }
+

@@ -18,7 +18,7 @@ const FaqPage = () => {
       },
       {
         title: " Q: How do project tracks work?",
-        content: `When you submit your project, you'll choose a track that best fits your idea, along with a short (50-word) explanation of why it belongs in that track. We'll select one winner and one runner-up for each track based on creativity, fit, and impact.`,
+        content: `When you submit your project, you'll choose a track that best fits your idea, along with a short (50-word) explanation of why it belongs in that track. We will distribute prizes for each track based on the number of people who select it. For instance, if most people choose track 1, then we will have first, second, and third place prizes for that track. If only a few people choose track 2, then we will only have a first place prize for that track.`,
       }, 
       {
         title: " Q: When will project tracks be released?",
@@ -62,7 +62,7 @@ const FaqPage = () => {
       },
       {
         title: " Q: How do prizes work?",
-        content: `We will select one winner and one runner-up for each track. In addition, we will select an overall grand prize across all projects. We will also have sponsor-specific prizes that aren't restricted to any track.`,
+        content: `We will have prizes for each tracks. In addition, we will select an overall grand prize across all projects. We will also have sponsor-specific prizes that aren't restricted to any track.`,
       },
       {
         title: " Q: How can I be entered into the raffle?",
@@ -70,7 +70,7 @@ const FaqPage = () => {
       },
       {
         title: " Q: Who runs this event?",
-        content: `You can learn more about us at <a href="http://acmatcmu.com" class="custom-link">acmatcmu.com</a>!`,
+        content: `You can learn more about us at <a href="https://www.acmatcmu.com/" class="custom-link">acmatcmu.com</a>!`,
       },
       {
         title: " Q: Any other questions, comments, or concerns?",
