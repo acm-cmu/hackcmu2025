@@ -111,7 +111,7 @@ function App() {
               <Row
                 time="5:30 – 6:00 PM"
                 title="Check‑in"
-                location="Tepper Simmons Auditorium"
+                location="Tepper Quad Outside Main Entrance"
                 desc="Check in with organizers and find team members."
               />
               <Row
@@ -131,7 +131,7 @@ function App() {
                 time="12:00 – 1:00 AM"
                 title="Midnight Snack"
                 location="Tepper Simmons Auditorium"
-                desc="Fuel up with late‑night snacks!"
+                desc="Fuel up with late–night snacks!"
                 food
               />
             </>
@@ -220,6 +220,39 @@ function App() {
       link="https://events.ycombinator.com/yc-cmu25"
       buttonText="Register for YC Event"
     />
+  </div>
+</section>
+
+<section className="tracks">
+  <h2 className="section-title glitch" data-text="TRACKS">
+    TRACKS
+  </h2>
+  <p className="infotext">
+    Track themes will be announced during the Opening Ceremony on Friday, September 12.
+    Teams will choose a track when submitting your project on Saturday.
+  </p>
+
+  <div className="track-card-list">
+    <TrackCard
+      title="Retro"
+      desc="Reinvent something old with a new twist! For instance, reinvent the notes app, reimagine the calculator, or redesign modern tech to look retro. Anything that emphasizes the past!"
+    />
+
+<TrackCard
+  title="Games & Gamification"
+  desc="Use game mechanics to motivate and engage! For instance, Build a to-do list as a game, design a video game, or use game mechanics to motivate and engage."
+/>
+
+<TrackCard
+  title="Digital Media"
+  desc="Create tools that empower communication! For instance, AI fact-checkers, smart transcribers, music products, — from helping journalists with interviews, to music products, to new media platforms."
+/>
+
+<TrackCard
+  title="Health & Sustainability"
+  desc="Create projects that improve health and promote sustainability — like apps for resource sharing, food rescue tools (e.g., TooGoodToGo), or new wellness solutions."
+/>
+
   </div>
 </section>
 
@@ -361,3 +394,15 @@ function ResourceCard({ title, desc, link, buttonText, hasButton = true }) {
   );
 }
 
+function TrackCard({ icon = "✨", title, subtitle, desc }) {
+  return (
+    <div className="track-card">
+      <div className="track-body">
+        <div className="track-head">
+          <h3 className="track-title">{title}</h3>
+        </div>
+        <p className="track-desc">{desc}</p>
+      </div>
+    </div>
+  );
+}

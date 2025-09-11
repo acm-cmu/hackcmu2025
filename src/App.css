@@ -350,3 +350,80 @@ footer a:hover{ text-decoration:none; }
   background: #00ccc1;
 }
 
+/* TRACKS */
+.track-card-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.track-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1rem 1.1rem;
+  border: 1px solid rgba(255,255,255,0.08);
+  background: rgba(255,255,255,0.04);
+  border-radius: 14px;
+}
+
+.track-icon {
+  flex: 0 0 auto;
+  font-size: 1.8rem;
+  line-height: 1;
+  width: 2.25rem;
+  height: 2.25rem;
+  display: grid;
+  place-items: center;
+  border-radius: 10px;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+.track-body {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.track-head {
+  display: flex;
+  align-items: baseline;
+  gap: .6rem;
+  flex-wrap: wrap;
+}
+
+.track-title {
+  margin: 0;
+  font-size: 1.05rem;
+  letter-spacing: .2px;
+  /* center this */
+  flex: 1;
+  text-align: center;
+}
+
+
+.track-desc {
+  margin: .4rem 0 0;
+  opacity: .9;
+  line-height: 1.2;
+}
+
+/* Make the list two columns on wider screens */
+@media (min-width: 840px) {
+  .track-card-list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Stack icon above text on very small screens */
+@media (max-width: 420px) {
+  .track-card {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .track-icon {
+    width: 100%;
+    height: 2.4rem;
+  }
+}
