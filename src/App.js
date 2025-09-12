@@ -111,7 +111,7 @@ function App() {
               <Row
                 time="5:30 – 6:00 PM"
                 title="Check‑in"
-                location="Tepper Quad Outside Main Entrance"
+                location="Tepper Simmons Auditorium"
                 desc="Check in with organizers and find team members."
               />
               <Row
