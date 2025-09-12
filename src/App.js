@@ -232,7 +232,7 @@ function App() {
     Teams will choose a track when submitting your project on Saturday.
   </p>
 
-  {/* <div className="track-card-list">
+  <div className="track-card-list">
     <TrackCard
       title="Retro"
       desc="Reinvent something old with a new twist! For instance, reinvent the notes app, reimagine the calculator, or redesign modern tech to look retro. Anything that emphasizes the past!"
@@ -253,7 +253,7 @@ function App() {
   desc="Create projects that improve health and promote sustainability — like apps for resource sharing, food rescue tools (e.g., TooGoodToGo), or new wellness solutions."
 />
 
-  </div> */}
+  </div>
 </section>
 
 
