@@ -170,13 +170,13 @@ function App() {
 />
 
               <Row
-                time="4:00 – 6:00 PM"
+                time="4:00 – 6:30 PM"
                 title="Judging & Expo"
                 location="Tepper Simmons Auditorium"
                 desc="Show off your project to judges, other hackers, and our sponsors!"
               />
               <Row
-                time="6:00 – 7:00 PM"
+                time="6:30 – 7:00 PM"
                 title="Dinner"
                 location="Tepper Simmons Auditorium"
                 desc="Relax and enjoy dinner with fellow hackers."
