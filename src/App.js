@@ -155,24 +155,32 @@ function App() {
                 food
               />
               <Row
-  time="4:00 PM"
-  title="Project Submission Deadline"
-  location={
-    <a
-      href="https://docs.google.com/forms/d/1YEgw8sjurf2Y6hz47QXgCO3IARuYKhjGPhx5sV7Hz80/edit"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      Submit via Google Forms
-    </a>
-  }
-  desc="Submit your project description and track selection."
-/>
+                time="4:00 PM"
+                title="Project Submission Deadline"
+                location={
+                  <a
+                    href="https://docs.google.com/forms/d/1YEgw8sjurf2Y6hz47QXgCO3IARuYKhjGPhx5sV7Hz80/edit"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Submit via Google Forms
+                  </a>
+                }
+                desc="Submit your project description and track selection."
+              />
 
               <Row
                 time="4:00 – 6:30 PM"
                 title="Judging & Expo"
-                location="Tepper Simmons Auditorium"
+                location={
+                  <a
+                    href="https://docs.google.com/spreadsheets/d/1Cu5ByqUBvGSsO8LpD84Y5rrjzKTfActEb6Tlq6_dXuI/edit?gid=0#gid=0"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    View Judging Schedule
+                  </a>
+                }
                 desc="Show off your project to judges, other hackers, and our sponsors!"
               />
               <Row
