@@ -159,7 +159,7 @@ function App() {
   title="Project Submission Deadline"
   location={
     <a
-      href="https://docs.google.com/forms/d/1XcXgXdHIMIZAqyRc4wt93mbJrs-1H5ejr6gvZn71b8k/"
+      href="https://docs.google.com/forms/d/1YEgw8sjurf2Y6hz47QXgCO3IARuYKhjGPhx5sV7Hz80/edit"
       target="_blank"
       rel="noopener noreferrer"
     >
