@@ -155,11 +155,20 @@ function App() {
                 food
               />
               <Row
-                time="4:00 PM"
-                title="Project Submission Deadline"
-                location="Submit via Google Forms"
-                desc="Submit your project description and track selection."
-              />
+  time="4:00 PM"
+  title="Project Submission Deadline"
+  location={
+    <a
+      href="https://docs.google.com/forms/d/1XcXgXdHIMIZAqyRc4wt93mbJrs-1H5ejr6gvZn71b8k/"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Submit via Google Forms
+    </a>
+  }
+  desc="Submit your project description and track selection."
+/>
+
               <Row
                 time="4:00 – 6:00 PM"
                 title="Judging & Expo"
