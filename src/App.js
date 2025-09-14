@@ -206,6 +206,86 @@ function App() {
         <FaqPage />
       </section>
 
+      {/* winners */}
+<section className="winners">
+  <h2 className="section-title glitch" data-text="WINNERS">
+    WINNERS
+  </h2>
+
+  {/* Grand Winner */}
+  <div className="grand-winner-card">
+    <div className="gw-left">
+      <div className="badge">Grand Winner</div>
+      <h3 className="project-name">Medicly</h3>
+      <ul className="team-list">
+        <li>Julian Ng-Thow-Hing</li>
+        <li>David Chung</li>
+        <li>Dheeraj Vislawath</li>
+        <li>Aarush Agarwal</li>
+      </ul>
+    </div>
+
+  </div>
+
+  {/* Track Winners */}
+  <h3 className="subsection-title">Track Winners</h3>
+  <div className="winners-grid">
+    <WinnerCard
+      track="Retro"
+      project="null_pointer"
+      team={[
+        'Siddharth Radhakrishnan',
+        'Jibran Hutchins',
+        'Agneya Tharun',
+        'Pius Lee',
+      ]}
+    />
+    <WinnerCard
+      track="Digital Media"
+      project="Cortex Cam"
+      team={[
+        'Keegan Wang',
+        'Aryan Pandalai',
+        'Austin Chen',
+        'Harsh Akunuri',
+      ]}
+    />
+    <WinnerCard
+      track="Health & Sustainability"
+      project="RepCheck"
+      team={[
+        'Thomas Chen',
+        'Daniel Yang',
+        'Poting Chen',
+        'Cheng-Yeh Chung',
+      ]}
+    />
+    <WinnerCard
+      track="Games & Gamification"
+      project="Driftwords"
+      team={['Phi Nguyen', 'Dustin Nguyen', 'Jeffrey Shen', 'Jack Zhu']}
+    />
+  </div>
+
+  {/* Honorable Mentions */}
+  <h3 className="subsection-title">Honorable Mentions</h3>
+  <div className="winners-grid hm-grid">
+    <HonorableCard
+      project="LaternFly"
+      team={['Devin DeCosmo', 'Rumi Loghmani']}
+    />
+    <HonorableCard
+      project="Ensemble"
+      team={['Nick Mino', 'Matteo Cericola', 'Michael Huynh', 'Hani Muratza']}
+    />
+    <HonorableCard
+      project="coDriver"
+      team={['Maximilian Peng', 'Athreya Sriram', 'Alexander Lee']}
+    />
+  </div>
+</section>
+
+
       {/* Resources */}
 
 <section className="resources">
@@ -423,3 +503,37 @@ function TrackCard({ icon = "✨", title, subtitle, desc }) {
     </div>
   );
 }
+
+function WinnerCard({ track, project, team }) {
+  return (
+    <div className="winner-card">
+      <div className="winner-card-head column-head">
+        <span className="pill">{track}</span>
+        <h4 className="project-name centered">{project}</h4>
+      </div>
+      <ul className="team-list vertical">
+        {team.map((m) => (
+          <li key={m}>{m}</li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+
+
+function HonorableCard({ project, team }) {
+  return (
+    <div className="winner-card hm-card">
+      <div className="winner-card-head column-head">
+        <span className="pill pill-muted">Honorable Mention</span>
+        <h4 className="project-name centered">{project}</h4>
+      </div>
+      <ul className="team-list vertical">
+        {team.map((m) => (
+          <li key={m}>{m}</li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+
