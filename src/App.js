@@ -267,6 +267,20 @@ function App() {
     />
   </div>
 
+  <h3 className="subsection-title">Sponsor Prizes</h3>
+  <div className="winners-grid">
+    <WinnerCard
+      track="Best Use of AI (Anthropic)"
+      project="null_pointer"
+      team={[
+        'Sean Borneman',
+        'James Waters',
+        'Jongsun Park',
+        'Atri Dev'
+      ]}
+    />
+  </div>
+
   {/* Honorable Mentions */}
   <h3 className="subsection-title">Honorable Mentions</h3>
   <div className="winners-grid hm-grid">
