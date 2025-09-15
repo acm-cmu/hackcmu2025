@@ -270,8 +270,8 @@ function App() {
   <h3 className="subsection-title">Sponsor Prizes</h3>
   <div className="winners-grid">
     <WinnerCard
-      track="Best Use of AI (Anthropic)"
-      project="null_pointer"
+      track="Best AI Hack (Anthropic)"
+      project="heXray"
       team={[
         'Sean Borneman',
         'James Waters',
